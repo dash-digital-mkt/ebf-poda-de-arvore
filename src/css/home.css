@@ -1,0 +1,85 @@
+.home {
+    background-image: url(../imagens/fotos/Header.png);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.home .cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 48px 0px 48px;
+    line-height: 62px;
+}
+
+.home .cabecalho .menu {
+    display: flex;
+    gap: 56px;
+    font-size: var(--tamanho-informacoes);
+}
+
+.home .cabecalho .menu a:hover {
+    color: var(--cor-terciaria);
+    transition: 0.25s ease-in;
+}
+
+.home .cabecalho .menu li:last-child a{
+    background-color: var(--cor-terciaria);
+    padding: 12px 24px;
+    border-radius: 100px;
+}
+.home .cabecalho .menu li:last-child a:hover{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    transition: 0.25s ease-in;
+}
+
+.home .conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-primaria);
+    margin: auto 0;
+}
+
+.home .conteudo h1 {
+    width: 800px;
+    height: 353px;
+    font-weight: 400;
+    text-align: center;
+    font-size: var(--titulo-home);
+    line-height: var(--altura-titulos);
+    letter-spacing: var(--espacamento-titulos);
+}
+
+.home .conteudo .botao-contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 22px 32px;
+    width: 205px;
+    height: 65px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-secundaria);
+    border-radius: 100px;
+    font-size: var(--tamanho-informacoes);
+}
+
+.home .conteudo .botao-contato a:hover {
+    color: var(--cor-terciaria);
+    transition: 0.25s ease-in;
+}
+
+/* LOGOS */
+
+.logos .logo-imagens {
+    background-color: var(--cor-terciaria);
+    min-height: 155px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
