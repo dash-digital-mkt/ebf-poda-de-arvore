@@ -1,0 +1,488 @@
+/* Header */
+header {
+  background: transparent;
+  color: var(--cor-primaria);
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: background 0.3s ease;
+}
+
+header.scrolled {
+  background: var(--cor-terciaria);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+header .logo img {
+  height: 50px;
+}
+
+header nav ul {
+  display: flex;
+  gap: 30px;
+}
+
+header nav ul li a {
+  color: var(--cor-primaria);
+  font-family: var(--fonte-primaria), sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+header nav ul li .btn-compliance {
+  background: var(--cor-terciaria);
+  color: var(--cor-primaria);
+  padding: 8px 15px;
+  border-radius: 20px;
+  transition: background 0.3s;
+}
+
+header nav ul li .btn-compliance:hover {
+  background: #163b2d;
+}
+
+.section-title {
+  width: fit-content;
+  color: var(--cor-secundaria);
+  border: 1px solid var(--cor-secundaria);
+  padding: 10px 14px;
+  font-size: 0.9rem;
+  margin: 22px auto;
+  border-radius: 8px;
+}
+
+.section-title-dark {
+  width: fit-content;
+  color: var(--cor-primaria);
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px 14px;
+  font-size: 0.9rem;
+  margin: 22px auto;
+  border-radius: 8px;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(60%);
+  position: relative;
+}
+
+.hero img::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 1);
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--cor-primaria);
+}
+
+.hero-content h1 {
+  font-family: var(--fonte-primaria), sans-serif;
+  font-size: 5rem;
+  font-weight: 400;
+  line-height: 110%;
+  margin-bottom: 40px;
+}
+
+.hero-content button {
+  background: var(--cor-secundaria);
+  color: var(--cor-branca);
+  border: none;
+  padding: 22px 32px;
+  font-size: 1.2rem;
+  line-height: 20px;
+  font-weight: 400;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: background 0.3s;
+}
+
+.hero-content button:hover {
+  background: #cc5c24;
+}
+
+/* Parceiros */
+.parceiros {
+  background: var(--cor-terciaria);
+  padding: 20px 0;
+  text-align: center;
+}
+
+.parceiros .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.parceiros img {
+  width: 10%;
+  max-width: 10%;
+  filter: grayscale(100%);
+  transition: filter 0.3s;
+  object-fit: contain;
+}
+
+.parceiros img:hover {
+  filter: grayscale(0%);
+}
+
+/* Quem Somos */
+#quem-somos .container {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+#quem-somos h2 {
+  font-family: var(--fonte-primaria), sans-serif;
+  font-size: 4rem;
+  font-weight: 400;
+  color: var(--cor-terciaria);
+  line-height: 100%;
+  width: 70%;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  #quem-somos h2 {
+    font-size: 2rem;
+  }
+}
+
+#quem-somos .highlight {
+  color: var(--cor-secundaria);
+}
+
+#quem-somos .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem 6rem;
+  margin-top: 40px;
+}
+
+#quem-somos img {
+  width: 40%;
+  border-radius: 10px;
+}
+
+#quem-somos p {
+  width: 40%;
+  text-align: justify;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--cor-texto);
+  font-family: var(--fonte-secundaria);
+}
+
+#quem-somos .coluna .seta {
+  display: flex;
+  gap: 10px;
+}
+
+#quem-somos .seta a {
+  text-decoration: none;
+  color: var(--cor-terciaria);
+}
+
+/* Destaque */
+.destaque {
+  background: var(--cor-terciaria);
+  color: var(--cor-branca);
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.destaque h2 {
+  font-family: var(--fonte-primaria), sans-serif;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 100%;
+  width: 36%;
+  margin: 0 auto;
+}
+
+.destaque .highlight {
+  color: var(--cor-secundaria);
+}
+
+.destaque p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-top: 1.5rem;
+  width: 45%;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .destaque h2 {
+    font-size: 2rem;
+    width: 60%;
+  }
+
+  .destaque p {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+}
+
+/* Serviços */
+#servicos .container {
+  padding: 80px 20px;
+}
+
+#servicos h2 {
+  font-family: var(--fonte-primaria), sans-serif;
+  font-size: 2.5rem;
+  color: var(--cor-terciaria);
+  text-align: center;
+}
+
+#servicos .servicos-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+#servicos .servicos-list div {
+  background: var(--cor-branca);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+#servicos .servicos-list div:hover {
+  transform: translateY(-10px);
+}
+
+#servicos img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+#servicos h3 {
+  font-family: var(--fonte-primaria), sans-serif;
+  color: var(--cor-secundaria);
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+#servicos h4 {
+  font-family: var(--fonte-primaria), sans-serif;
+  color: var(--cor-terciaria);
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+#servicos p {
+  color: #555;
+  font-size: 1rem;
+}
+
+/* Princípios */
+#principios {
+  background: var(--cor-terciaria);
+  color: var(--cor-branca);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+#principios h2 {
+  font-family: var(--fonte-primaria), sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+#principios .highlight {
+  color: var(--cor-secundaria);
+}
+
+#principios p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+#principios .principios-list {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+#principios .principios-list div {
+  background: #163b2d;
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+  text-align: left;
+}
+
+#principios h3 {
+  color: var(--cor-secundaria);
+  font-family: var(--fonte-primaria), sans-serif;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+/* Seção Final */
+.final {
+  position: relative;
+  text-align: center;
+  color: var(--cor-terciaria);
+}
+
+.final img {
+  width: 100%;
+  height: 560px;
+  object-fit: cover;
+}
+
+.final-content {
+  width: 100%;
+  height: 90vh;
+  background: var(--cor-primaria);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.final-content h2 {
+  font-family: var(--fonte-primaria), sans-serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.final-content .highlight {
+  color: var(--cor-secundaria);
+}
+
+.final-content button {
+  background: var(--cor-terciaria);
+  color: var(--cor-branca);
+  border: none;
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: background 0.3s;
+}
+
+.final-content button:hover {
+  background: #163b2d;
+}
+
+/* Footer */
+footer {
+  background: var(--cor-terciaria);
+  color: var(--cor-branca);
+  padding: 40px 0;
+  text-align: center;
+}
+
+footer .logo-footer img {
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+footer nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+footer nav ul li a {
+  color: var(--cor-branca);
+  font-size: 1rem;
+}
+
+footer .social-media a {
+  color: var(--cor-secundaria);
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+footer p {
+  font-size: 0.9rem;
+  margin-top: 20px;
+}
+
+footer a {
+  color: var(--cor-secundaria);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  #quem-somos .content {
+    flex-direction: column;
+  }
+
+  #quem-somos img,
+  #quem-somos p {
+    width: 100%;
+  }
+
+  #principios .principios-list {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  #principios .principios-list div {
+    width: 100%;
+  }
+
+  .final-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .parceiros img {
+    width: 100px;
+  }
+}

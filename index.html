@@ -1,101 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EBF - Poda de Árvores</title>
-
-    <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/variaveis-e-globais.css">
-    <link rel="stylesheet" href="./src/css/home.css">
-    <link rel="stylesheet" href="./src/css/sobre.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EBF - Home</title>
+  <link rel="stylesheet" href="css/reset-geral.css">
+  <link rel="stylesheet" href="css/variaveis.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <section class="pagina">
-        <!-- home -->
-        <main class="home uppercase">
-            <div class="cabecalho">
-                <a href="#"><img src="./src/imagens/logos/EBF-Logo.png" alt="logo ebf"></a>
-                <ul class="menu">
-                    <li><a href="#">Quem somos</a></li>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Princípios</a></li>
-                    <li><a href="#">Contato</a></li>
-                    <li>
-                        <a href="#">Compliance e integridade</a>
-                    </li>
-                </ul>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="images/logo-branca.png" alt="EBF Qualidade Profissional">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#quem-somos">QUEM SOMOS</a></li>
+          <li><a href="#servicos">SERVIÇOS</a></li>
+          <li><a href="#principios">PRINCÍPIOS</a></li>
+          <li><a href="#contato">CONTATO</a></li>
+          <li><a class="btn-compliance" href="#compliance">COMPLIANCE E INTEGRIDADE</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <img src="images/hero-bg.png" alt="Estádio com serviços da EBF">
+    <div class="hero-content">
+      <h1>HÁ MAIS DE 30 ANOS <br /> SERVINDO COM <br>EXCELÊNCIA</h1>
+      <button>ENTRE EM CONTATO</button>
+    </div>
+  </section>
+
+  <section class="parceiros">
+    <div class="container">
+      <img src="images/parceiro1.png" alt="Parceiro 1">
+      <img src="images/parceiro2.png" alt="Parceiro 2">
+      <img src="images/parceiro3.png" alt="Parceiro 3">
+      <img src="images/parceiro4.png" alt="Parceiro 4">
+      <img src="images/parceiro5.png" alt="Parceiro 5">
+      <img src="images/parceiro6.png" alt="Parceiro 6">
+    </div>
+  </section>
+
+  <section id="quem-somos">
+    <div class="container">
+      <div class="section-title">EBF SERVIÇOS PROFISSIONAIS</div>
+      <h2><span class="highlight">ESPECIALISTAS EM</span> MANUTENÇÃO E CONSERVAÇÃO DE ÁREAS VERDES</h2>
+      <div class="content">
+        <img src="images/equipe.png" alt="Equipe EBF">
+        <div class="coluna">
+          <p>A EBF é uma empresa com mais de três décadas de experiência no mercado, especializada em manutenção de áreas verdes, poda de árvores e manutenção predial. Nossa missão é fornecer serviços de alta qualidade, garantindo a satisfação de nossos clientes e contribuindo para a preservação do meio ambiente.
+          <br />
+          Atuamos com uma equipe de profissionais capacitados e comprometidos com a excelência em cada projeto.
+          </p>
+          <div class="seta">
+            <div>
+              <img src="images/seta.png" alt="seta">
             </div>
-
-            <div class="conteudo">
-                <h1>Há mais de 30 anos servindo com excelência</h1>
-
-                <div class="botao-contato">
-                    <a href="#">Entre em contato</a>
-                </div>
+            <div>
+              <a href="#" class="seta-servicos">NOSSOS SERVIÇOS</a>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        </main>
-        <!-- logos -->
-        <section class="logos">
-            <ul class="logo-imagens">
-                <li>
-                    <a href=""><img src="./src/imagens/logos/novacap.png" alt=""></a>
-                </li>
-                <li>
-                    <a href=""><img src="./src/imagens/logos/senado.png" alt=""></a>
-                </li>
-                <li>
-                    <a href=""><img src="./src/imagens/logos/serpro.png" alt=""></a>
-                </li>
-                <li>
-                    <a href=""><img src="./src/imagens/logos/governo-federal.png" alt=""></a>
-                </li>
-                <li>
-                    <a href=""><img src="./src/imagens/logos/inframerica.png" alt=""></a>
-                </li>
-                <li>
-                    <a href=""><img src="./src/imagens/logos/brb.png" alt=""></a>
-                </li>
-            </div>
-        </section>
-        
-        <!-- sobre -->
-        <section class="sobre">    
-            <div class="topo-sobre">
-                <div>
-                    <span class="sobre-ebf uppercase">EBF serviços profissionais</span>
-                </div>
-                <div class="titulo-sobre">
-                    <div class="cor-terciaria uppercase"><span class="cor-secundaria">Especialistas em</span> manutenção e conservação de áreas verdes</div>
-                </div>
-            </div>
-            <div class="conteudo-sobre">
-                <img src="./src/imagens/fotos/foto-sobre.png" alt="imagem de uma equipe ebf">
-                <div class="texto-e-servicos">
-                    <p class="texto-sobre">A EBF é uma empresa com mais de três décadas de experiência no mercado, especializada em manutenção de áreas verdes, poda de árvores e manutenção predial. Nossa missão é fornecer serviços de alta qualidade, garantindo a satisfação de nossos clientes e contribuindo para a preservação do meio ambiente. Atuamos com uma equipe de profissionais capacitados e comprometidos com a excelência em cada projeto.</p>
+  <section class="destaque">
+    <div class="section-title-dark">O QUE FAZEMOS</div>
+    <h2>COMPROMISSO COM <span class="highlight">QUALIDADE E SEGURANÇA</span></h2>
+    <p>Oferecemos serviços essenciais para a conservação e valorização de espaços urbanos e empresariais.</p>
+  </section>
 
-                    <div class="final-sobre">
-                        <div>
-                            <img src="./src/imagens/icones/Icon Wrapper.svg" alt="seta  ">
-                        </div>
-                        <div>
-                            <a href="#" class="seta-servicos uppercase">Nossos serviços</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <section id="servicos">
+    <div class="container">
+      <div class="servicos-list">
+        <div>
+          <h3>3</h3>
+          <h4>IRRIGAÇÃO DE CANTEIROS</h4>
+          <p>A irrigação de canteiros consiste em fornecer água às plantas cultivadas em canteiros...</p>
+          <img src="images/irrigacao.jpg" alt="Irrigação de Canteiros">
+        </div>
+        <div>
+          <h3>4</h3>
+          <h4>CORTE DE GRAMA</h4>
+          <p>O corte de grama é uma técnica de manutenção de área verde...</p>
+          <img src="images/corte-grama.jpg" alt="Corte de Grama">
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <!-- heading serviços -->
-        <!-- steps serviços -->
-        <!-- princípios -->
-        <!-- imagem -->
-        <!-- CTA -->
-        <!-- footer -->
-         
-    </section>
+  <section id="principios">
+    <div class="container">
+      <h2>NOSSOS PRINCÍPIOS, <br /><span class="highlight">SUA CONFIANÇA</span></h2>
+      <p>Na EBF, acreditamos que qualidade e sustentabilidade caminham juntas.<br />
+        Nossa missão, visão e valores refletem o compromisso com excelência,<br />
+        inovação e respeito ao meio ambiente.</p>
+      <div class="principios-list">
+        <div>
+          <h3>MISSÃO</h3>
+          <p>Oferecer um serviço sempre diferenciado, pautando na excelência, qualidade e sustentabilidade, primando
+            pela sua responsabilidade social, garantindo assim, o bem-estar da população, buscando sempre a melhoria
+            contínua.</p>
+        </div>
+        <div>
+          <h3>VISÃO</h3>
+          <p>Consolidar sua liderança dentro dos seus objetivos sociais a nível nacional, com base firmada na qualidade
+            da prestação de seus serviços.</p>
+        </div>
+        <div>
+          <h3>VALORES</h3>
+          <p>Para traduzir nossa missão em realidade,
+            a EBF se norteia por 4 valores básicos:
+          </p>
 
-    <script src="index.js"></script>
+          <p>Ética | Respeito | Comprometimento com seus clientes | Valorização de seus colaboradores.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final">
+    <img src="images/final-bg.jpg" alt="Serviços EBF em ação">
+    <div class="final-content">
+      <h2>
+        VALORIZANDO SEU <br />
+        ESPAÇO <span class="highlight">COM SOLUÇÕES<br />
+          INTELIGENTES</span>
+      </h2>
+      <button>SOLICITE UM ORÇAMENTO</button>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="logo-footer">
+        <img src="images/logo-laranja.png" alt="EBF Qualidade Profissional">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#quem-somos">QUEM SOMOS</a></li>
+          <li><a href="#servicos">SERVIÇOS</a></li>
+          <li><a href="#principios">PRINCÍPIOS</a></li>
+          <li><a href="#contato">CONTATO</a></li>
+        </ul>
+      </nav>
+      <div class="social-media">
+        <a href="#">WHATSAPP</a>
+        <a href="#">INSTAGRAM</a>
+        <a href="#">FACEBOOK</a>
+      </div>
+    </div>
+    <p>© 2025, Todos os direitos reservados | <a href="#">Política de Privacidade</a></p>
+  </footer>
 </body>
+
 </html>
