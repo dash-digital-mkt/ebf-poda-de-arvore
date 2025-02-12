@@ -8,24 +8,29 @@
   <link rel="stylesheet" href="css/reset-geral.css">
   <link rel="stylesheet" href="css/variaveis.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/menu.css">
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <div class="container">
       <div class="logo">
         <img src="images/logo-branca.png" alt="EBF Qualidade Profissional">
       </div>
       <nav>
-        <ul>
-          <li><a href="#quem-somos">QUEM SOMOS</a></li>
-          <li><a href="#servicos">SERVIÇOS</a></li>
-          <li><a href="#principios">PRINCÍPIOS</a></li>
-          <li><a href="#contato">CONTATO</a></li>
-          <li><a class="btn-compliance" href="#compliance">COMPLIANCE E INTEGRIDADE</a></li>
+        <div class="topo-menu">
+          <img src="./images/hamburger.png" alt="Menu" class="menu-icon" id="menu-icon">
+          <img src="./images/logo-menu.png" alt="Logo" class="menu-logo" id="menu-logo">
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#quem-somos" class="nav-item" data-default="QUEM SOMOS" data-active="HOME">QUEM SOMOS</a></li>
+            <li><a href="#servicos" class="nav-item" data-default="SERVIÇOS" data-active="QUEM SOMOS">SERVIÇOS</a></li>
+            <li><a href="#principios" class="nav-item" data-default="PRINCÍPIOS" data-active="SERVIÇOS">PRINCÍPIOS</a></li>
+            <li><a href="#contato" class="nav-item" data-default="CONTATO" data-active="CONTATO">CONTATO</a></li>
+            <li class="regular-only"><a href="#" class="nav-item btn-compliance" data-default="COMPLIANCE E INTEGRIDADE" data-active="">COMPLIANCE E INTEGRIDADE</a></li>
         </ul>
-      </nav>
+    </nav>
     </div>
   </header>
 
@@ -53,18 +58,20 @@
       <div class="section-title">EBF SERVIÇOS PROFISSIONAIS</div>
       <h2><span class="highlight">ESPECIALISTAS EM</span> MANUTENÇÃO E CONSERVAÇÃO DE ÁREAS VERDES</h2>
       <div class="content">
-        <img src="images/equipe.png" alt="Equipe EBF">
+        <img class="equipe" src="images/equipe.png" alt="Equipe EBF">
         <div class="coluna">
-          <p>A EBF é uma empresa com mais de três décadas de experiência no mercado, especializada em manutenção de áreas verdes, poda de árvores e manutenção predial. Nossa missão é fornecer serviços de alta qualidade, garantindo a satisfação de nossos clientes e contribuindo para a preservação do meio ambiente.
-          <br />
-          Atuamos com uma equipe de profissionais capacitados e comprometidos com a excelência em cada projeto.
+          <p>A EBF é uma empresa com mais de três décadas de experiência no mercado, especializada em manutenção de
+            áreas verdes, poda de árvores e manutenção predial. Nossa missão é fornecer serviços de alta qualidade,
+            garantindo a satisfação de nossos clientes e contribuindo para a preservação do meio ambiente.
+            <br />
+            Atuamos com uma equipe de profissionais capacitados e comprometidos com a excelência em cada projeto.
           </p>
           <div class="seta">
             <div>
               <img src="images/seta.png" alt="seta">
             </div>
             <div>
-              <a href="#" class="seta-servicos">NOSSOS SERVIÇOS</a>
+              <a href="#servicos" class="seta-servicos">NOSSOS SERVIÇOS</a>
             </div>
           </div>
         </div>
@@ -80,19 +87,85 @@
 
   <section id="servicos">
     <div class="container">
-      <div class="servicos-list">
-        <div>
-          <h3>3</h3>
-          <h4>IRRIGAÇÃO DE CANTEIROS</h4>
-          <p>A irrigação de canteiros consiste em fornecer água às plantas cultivadas em canteiros...</p>
-          <img src="images/irrigacao.jpg" alt="Irrigação de Canteiros">
+      <div> <!-- lista de servicos -->
+        <div class="esquerda">
+          <div class="conteudo-esquerda">
+            <div class="titulo-esquerda">
+              <div class="numeros">1</div>
+              <h4>MANUTENÇÃO DE ÁREA VERDE</h4>
+            </div>
+            <div>
+              <p>Contratar um serviço profissional de corte de grama pode garantir que o trabalho seja realizado com qualidade e segurança, além de economizar tempo e esforço. Os profissionais capacitados possuem as ferramentas e técnicas adequadas para realizar o trabalho de forma eficiente e garantir a saúde da grama.</p>
+            </div>
+          </div>
+          <img src="./images/area-verde.jpg" alt="manutencao area verde">
         </div>
-        <div>
-          <h3>4</h3>
-          <h4>CORTE DE GRAMA</h4>
-          <p>O corte de grama é uma técnica de manutenção de área verde...</p>
-          <img src="images/corte-grama.jpg" alt="Corte de Grama">
+
+        <div class="direita">
+          <div class="conteudo-direita">
+            <div class="titulo-direita">
+              <div class="numeros">2</div>
+              <h4>PODA DE ÁRVORES</h4>
+            </div>
+            <div>
+              <p>A poda de árvores é uma técnica de manejo que consiste na retirada de ramos e galhos das árvores. Ela é realizada com o objetivo de manter a saúde da árvore, garantir a segurança das pessoas e dos imóveis próximos e melhorar a aparência da árvore. A poda pode ser feita em qualquer época do ano, mas é importante que seja realizada por profissionais capacitados para evitar danos à árvore.</p>
+            </div>
+          </div>
+          <img src="./images/poda-arvores.jpg" alt="manutencao area verde">
         </div>
+
+        <div class="esquerda">
+          <div class="conteudo-esquerda">
+            <div class="titulo-esquerda">
+              <div class="numeros">3</div>
+              <h4>IRRIGAÇÃO DE CANTEIROS</h4>
+            </div>
+            <div>
+              <p>A irrigação de canteiros consiste em fornecer água às plantas cultivadas em canteiros. A irrigação é realizada com o objetivo de manter a saúde das plantas e garantir o seu crescimento saudável. A irrigação pode ser feita por meio de sistemas automatizados ou manualmente, caminhão Pipa e com o uso de mangueiras e regadores.</p>
+            </div>
+          </div>
+          <img src="./images/irrigacao.png" alt="manutencao area verde">
+        </div>
+
+        <div class="direita">
+          <div class="conteudo-direita">
+            <div class="titulo-direita">
+              <div class="numeros">4</div>
+              <h4>CORTE DE GRAMA</h4>
+            </div>
+            <div>
+              <p>O corte de grama é uma técnica de manutenção de área verde. O corte é realizado com o objetivo de manter a saúde da grama, garantir a segurança das pessoas e melhorar a aparência do gramado. O corte pode ser feito com roçadeiras, cortadores de grama e tratores especializados e deve ser realizado periodicamente para garantir um crescimento saudável da grama.</p>
+            </div>
+          </div>
+          <img src="./images/corte-grama.jpg" alt="manutencao area verde">
+        </div>
+
+        <div class="esquerda">
+          <div class="conteudo-esquerda">
+            <div class="titulo-esquerda">
+              <div class="numeros">5</div>
+              <h4>ALUGUEL DE MÁQUINAS</h4>
+            </div>
+            <div>
+              <p>Para escolher a empresa ideal para realizar o serviço de locação de máquinas e tratores é importante conhecer as suas necessidades e requisitos. Isso inclui saber quais máquinas serão necessárias, por quanto tempo elas serão necessárias e em que condições elas devem estar. É importante verificar a reputação da empresa e certificar-se de que ela ofereça máquinas de qualidade. </p>
+            </div>
+          </div>
+          <img src="./images/aluguel-maquinas.jpg" alt="manutencao area verde">
+        </div>
+
+        <div class="direita">
+          <div class="conteudo-direita">
+            <div class="titulo-direita">
+              <div class="numeros">6</div>
+              <h4>LIMPEZA DE FACHADA</h4>
+            </div>
+            <div>
+              <p>A limpeza de fachada é um serviço de remoção de manchas e impurezas causadas pela ação do tempo, a fim de evidenciar a superfície original da área externa de prédios ou edifícios. A execução consiste na aplicação de métodos próprios e aplicação de produtos químicos e água, variando conforme o tipo de fachada, podendo ser de vidro transparente, espelhados, fumê, ou outros tipos.</p>
+            </div>
+          </div>
+          <img src="./images/limpeza-fachada.jpg" alt="manutencao area verde">
+        </div>
+
       </div>
     </div>
   </section>
@@ -160,6 +233,8 @@
     </div>
     <p>© 2025, Todos os direitos reservados | <a href="#">Política de Privacidade</a></p>
   </footer>
+  <a href="https://www.flaticon.com/free-icons/hamburger" title="hamburger icons">Hamburger icons created by See Icons - Flaticon</a>
+  <script src="index.js"></script>
 </body>
 
 </html>

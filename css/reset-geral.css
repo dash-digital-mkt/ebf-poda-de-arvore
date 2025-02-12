@@ -15,14 +15,12 @@ ul {
 body {
     font-family: var(--fonte-primaria);
     line-height: 1.6;
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-branca);
     color: #333;
 }
 
 .container {
-    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
 }
 
 button {
