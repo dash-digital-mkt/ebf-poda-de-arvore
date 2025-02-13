@@ -3,7 +3,7 @@ header {
   background: transparent;
   color: var(--cor-primaria);
   padding: 10px 0;
-  position: fixed;
+  position: absolute;
   width: 100%;
   top: 0;
   left: 0;
@@ -20,11 +20,12 @@ header .container {
   text-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
+  padding: 0 5%;
   overflow: hidden;
 }
 
-header .logo img {
-  height: 50px;
+header .logo {
+  margin-top: 10px;
 }
 
 header nav ul {
@@ -54,32 +55,11 @@ header nav ul li .btn-compliance:hover {
   background: #184132;
 }
 
-.section-title {
-  width: fit-content;
-  color: var(--cor-secundaria);
-  border: 1px solid var(--cor-secundaria);
-  padding: 10px 14px;
-  font-size: 0.9rem;
-  margin: 22px auto;
-  border-radius: 8px;
-}
-
-.section-title-dark {
-  width: fit-content;
-  color: var(--cor-primaria);
-  background-color: rgba(0, 0, 0, 0.2);
-  padding: 10px 14px;
-  font-size: 0.9rem;
-  margin: 22px auto;
-  border-radius: 8px;
-  font-family: var(--fonte-secundaria);
-}
-
 /* Hero Section */
 .hero {
   position: relative;
   width: 100%;
-  height: 90vh;
+  height: 85vh;
   overflow: hidden;
 }
 
@@ -91,14 +71,13 @@ header nav ul li .btn-compliance:hover {
   position: relative;
 }
 
-.hero img::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 1);
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--cor-primaria);
 }
 
 .hero-content {
@@ -108,14 +87,15 @@ header nav ul li .btn-compliance:hover {
   transform: translate(-50%, -50%);
   text-align: center;
   color: var(--cor-primaria);
+  width: 80%;
 }
 
 .hero-content h1 {
   font-family: var(--fonte-primaria), sans-serif;
   font-size: 5rem;
   font-weight: 400;
-  line-height: 110%;
-  margin-bottom: 40px;
+  line-height: 130%;
+  margin-bottom: 5%;
 }
 
 .hero-content button {
@@ -142,16 +122,15 @@ header nav ul li .btn-compliance:hover {
   text-align: center;
 }
 
-.parceiros .container {
+.parceiros .slide-track {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
 }
 
 .parceiros img {
-  width: 10%;
-  max-width: 10%;
+  max-width: 80%;
   filter: grayscale(100%);
   transition: filter 0.3s;
   object-fit: contain;
@@ -159,6 +138,38 @@ header nav ul li .btn-compliance:hover {
 
 .parceiros img:hover {
   filter: grayscale(0%);
+}
+
+/* animacao */
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide-track {
+  display: flex;
+  width: calc(20px * 12);
+  animation: scroll 15s linear infinite;
+}
+
+.slide {
+  width: 250px;
+  flex-shrink: 0;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(calc(-250px * 3)); /* Ajuste o valor conforme o número de imagens */
+  }
 }
 
 /* Quem Somos */
@@ -193,6 +204,7 @@ header nav ul li .btn-compliance:hover {
   justify-content: center;
   gap: 2rem 6rem;
   margin-top: 40px;
+  padding: 0 15%;
 }
 
 #quem-somos .equipe {
@@ -204,9 +216,14 @@ header nav ul li .btn-compliance:hover {
   text-align: justify;
   font-size: 1.1rem;
   font-weight: 400;
-  padding-bottom: 40px;
   color: var(--cor-texto);
   font-family: var(--fonte-secundaria);
+}
+
+#quem-somos .coluna {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 #quem-somos .coluna .seta {
@@ -232,7 +249,6 @@ header nav ul li .btn-compliance:hover {
   font-size: 4rem;
   font-weight: 400;
   line-height: 100%;
-  width: 36%;
   margin: 0 auto;
 }
 
@@ -359,15 +375,16 @@ header nav ul li .btn-compliance:hover {
 /* Princípios */
 #principios {
   background: var(--cor-terciaria);
-  color: var(--cor-branca);
+  color: var(--cor-primaria);
   padding: 80px 20px;
   text-align: center;
 }
 
 #principios h2 {
   font-family: var(--fonte-primaria), sans-serif;
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 30px;
+  font-weight: 300;
 }
 
 #principios .highlight {
@@ -375,8 +392,9 @@ header nav ul li .btn-compliance:hover {
 }
 
 #principios p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin-bottom: 40px;
+  font-family: var(--fonte-secundaria);
 }
 
 #principios .principios-list {
@@ -386,18 +404,20 @@ header nav ul li .btn-compliance:hover {
 }
 
 #principios .principios-list div {
+  padding: 0 30px;
   background: #163b2d;
   padding: 20px;
   border-radius: 10px;
   width: 30%;
-  text-align: left;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 #principios h3 {
   color: var(--cor-secundaria);
   font-family: var(--fonte-primaria), sans-serif;
   margin-bottom: 15px;
-  font-size: 1.5rem;
+  font-size: 3rem;
+  font-weight: 300;
 }
 
 /* Seção Final */
@@ -407,39 +427,41 @@ header nav ul li .btn-compliance:hover {
   color: var(--cor-terciaria);
 }
 
-.final img {
+.final .background-final {
   width: 100%;
   height: 560px;
   object-fit: cover;
 }
 
+.container-final {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+  text-align: center;
+}
+
 .final-content {
   width: 100%;
-  height: 90vh;
-  background: var(--cor-primaria);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: var(--cor-branca);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 5%;
 }
 
-.final-content h2 {
-  font-family: var(--fonte-primaria), sans-serif;
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.final-content .highlight {
-  color: var(--cor-secundaria);
+.final-content .banner-final {
+  width: 80%;
 }
 
 .final-content button {
   background: var(--cor-terciaria);
   color: var(--cor-branca);
   border: none;
+  margin-top: -100px;
   padding: 15px 40px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   cursor: pointer;
   border-radius: 30px;
   transition: background 0.3s;
@@ -452,21 +474,13 @@ header nav ul li .btn-compliance:hover {
 /* Footer */
 footer {
   background: var(--cor-terciaria);
-  color: var(--cor-branca);
-  padding: 40px 0;
-  text-align: center;
+  color: var(--cor-primaria);
+  display: flex;
 }
+
 
 footer .logo-footer img {
-  height: 50px;
-  margin-bottom: 20px;
-}
-
-footer nav ul {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-bottom: 20px;
+  width: 60%;
 }
 
 footer nav ul li a {
@@ -474,15 +488,58 @@ footer nav ul li a {
   font-size: 1rem;
 }
 
+footer .container-footer {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  margin: 0 5%;
+}
+
+footer .container-externo-social {
+  display: flex;
+  flex-direction: column;
+  gap: 20%;
+  margin: 5% 0;
+}
+
+footer .social-media {
+  display: flex;
+  gap: 30px;
+}
+
+footer .social-media .social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+footer .direitos-reservados {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  padding: 5% 10% 5% 3%;
+  border-left: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+footer .direitos-reservados p {
+  color: var(--cor-extra-footer);
+  font-family: var(--fonte-secundaria);
+}
+
+footer .menu-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
 footer .social-media a {
-  color: var(--cor-secundaria);
-  margin: 0 10px;
-  font-weight: bold;
+  color: var(--cor-primaria);
 }
 
 footer p {
   font-size: 0.9rem;
-  margin-top: 20px;
 }
 
 footer a {
@@ -493,6 +550,7 @@ footer a {
 @media (max-width: 1024px) {
   .hero-content h1 {
     font-size: 3.75rem;
+    line-height: 4.5rem;
   }
 }
 
@@ -505,22 +563,15 @@ footer a {
 
   .hero-content h1 {
     font-size: 2.5rem;
+    line-height: 4rem;
   }
 
   #quem-somos .content {
     flex-direction: column;
   }
 
-  #quem-somos img,
-  #quem-somos p {
-    width: 100%;
-  }
-
-  #servicos img {
-    width: 60%;
-  }
-
-  #servicos .esquerda, #servicos .direita {
+  #servicos .esquerda,
+  #servicos .direita {
     flex-direction: column;
     gap: 30px;
   }
@@ -546,15 +597,43 @@ footer a {
   .parceiros img {
     width: 100px;
   }
+
+  footer .container-externo-social {
+    gap: 5%;
+  }
+
+  footer .social-media {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width:425px) {
+  .hero-content h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  
+  .final-content button {
+    margin-top: -45px;
+    padding: 10px 30px;
+    font-size: 0.5rem;
+  }
+
+  footer p {
+    font-size: 0.6rem;
+  }
+  
 }
 
 @media (max-width:345px) {
-  .hero-content h1 {
-    font-size: 2rem;
-  }
 
   .hero-content button {
     padding: 11px 16px;
+  }
+
+  #quem-somos .equipe {
+    width: 100%;
   }
 
   #servicos img {
@@ -567,5 +646,49 @@ footer a {
     font-size: 2rem;
     margin: 20px 0;
     align-self: center;
+  }
+
+  .final-content button {
+    padding: 5px 15px;
+  }
+
+  footer .container-footer {
+    flex-direction: column;
+  }
+
+  footer .logo-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+  }
+
+  footer .social-media {
+    align-items: center;
+  }
+
+  footer .direitos-reservados {
+    border-left: 0px;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 4%;
+    align-items: center;
+  }
+
+  footer .menu-footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .menu-footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .menu-footer li {
+    flex: 1 1 calc(50% - 10px);
+    aspect-ratio: 4; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
