@@ -25,12 +25,13 @@ header .container {
 }
 
 header .logo {
-  margin-top: 10px;
+  margin-top: 13px;
 }
 
 header nav ul {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 30px;
 }
@@ -643,7 +644,7 @@ footer a {
   }
 }
 
-@media (max-width:425px) {
+@media (max-width:455px) {
   .hero-content h1 {
     font-size: 3rem;
     line-height: 3.5rem;

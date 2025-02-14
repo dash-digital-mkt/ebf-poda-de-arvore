@@ -11,14 +11,3 @@
     --fonte-primaria: 'Anton', sans-serif;
     --fonte-secundaria: "DM Sans", sans-serif;
 }
-
-:root {
-    --titulo-hero: 104px;
-    --tamanho-titulo: 72px;
-    --tamanho-informacoes: 20px;
-    --tamanho-titulo-secundario: 54px;
-    --tamanho-texto: 18px;
-    --tamanho-copy: 14px;
-    --altura-titulos: 106%;
-    --espacamento-titulos: -2%;
-}
