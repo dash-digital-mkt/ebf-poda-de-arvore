@@ -187,12 +187,6 @@ header nav ul li .btn-compliance:hover {
   margin: 0 auto;
 }
 
-@media (max-width: 768px) {
-  #quem-somos h2 {
-    font-size: 2rem;
-    line-height: 3rem;
-  }
-}
 
 #quem-somos .highlight {
   color: var(--cor-secundaria);
@@ -264,18 +258,6 @@ header nav ul li .btn-compliance:hover {
   width: 45%;
   margin: 0 auto;
   margin-top: 40px;
-}
-
-@media (max-width: 768px) {
-  .destaque h2 {
-    font-size: 2rem;
-    width: 60%;
-  }
-
-  .destaque p {
-    font-size: 0.8rem;
-    width: 100%;
-  }
 }
 
 /* Serviços */
@@ -575,6 +557,21 @@ footer a {
     flex-direction: column;
   }
 
+  #quem-somos h2 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  
+  .destaque h2 {
+    font-size: 2rem;
+    width: 60%;
+  }
+
+  .destaque p {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+
   #servicos .esquerda,
   #servicos .direita {
     flex-direction: column;
@@ -584,6 +581,10 @@ footer a {
   #servicos .esquerda .conteudo-esquerda,
   #servicos .direita .conteudo-direita {
     flex-wrap: wrap;
+  }
+
+  #servicos img {
+    width: 70%;
   }
 
   #principios .principios-list {
@@ -622,9 +623,13 @@ footer a {
     font-size: 1.7rem;
     min-width: 90%;
   }
+  
+  #servicos img {
+    width: 100%;
+  }
 
-  .final .background-final {
-    
+  #principios h2 {
+    font-size: 2rem;
   }
 
   .final-content button {
@@ -663,20 +668,12 @@ footer a {
     width: 100%;
   }
 
-  #servicos img {
-    width: 100%;
-  }
-
   #servicos .esquerda .conteudo-esquerda .titulo-esquerda h4,
   #servicos .direita .conteudo-direita .titulo-direita h4 {
     gap: 10px;
     font-size: 2rem;
     margin: 20px 0;
     align-self: center;
-  }
-
-  #principios h2 {
-    font-size: 2rem;
   }
 
   .final-content button {
