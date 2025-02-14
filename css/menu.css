@@ -11,13 +11,10 @@
 
 .menu-logo {
     display: none;
-    position: fixed;
-    top: 15px;
-    right: 15%;
-    z-index: 3;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    pointer-events: none;
+}
+
+.nav-links img {
+    width: 50%;
 }
 
 .menu-logo.visible {
@@ -31,6 +28,12 @@
 
 .nav-links li {
     margin-left: 20px;
+}
+
+.nav-links li:last-child {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: 10%;
 }
 
 .nav-links a {
@@ -84,9 +87,5 @@
         right: -100%;
         width: 100%; 
         height: 100vh;
-    }
-
-    .menu-logo {
-        right: 50%;
     }
 }

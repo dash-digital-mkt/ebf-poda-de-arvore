@@ -95,7 +95,7 @@ header nav ul li .btn-compliance:hover {
   font-size: 5rem;
   font-weight: 400;
   line-height: 130%;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
 }
 
 .hero-content button {
@@ -183,7 +183,7 @@ header nav ul li .btn-compliance:hover {
   font-weight: 400;
   color: var(--cor-terciaria);
   line-height: 5rem;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -207,7 +207,7 @@ header nav ul li .btn-compliance:hover {
 }
 
 #quem-somos p {
-  text-align: justify;
+  /* text-align: justify; */
   font-size: 1.1rem;
   font-weight: 400;
   color: var(--cor-texto);
@@ -234,13 +234,13 @@ header nav ul li .btn-compliance:hover {
 .destaque {
   background: var(--cor-terciaria);
   color: var(--cor-branca);
-  padding: 100px 20px;
+  padding: 10% 0;
   text-align: center;
 }
 
 .destaque h2 {
   font-family: var(--fonte-primaria), sans-serif;
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: 400;
   line-height: 100%;
   margin: 0 auto;
@@ -251,11 +251,11 @@ header nav ul li .btn-compliance:hover {
 }
 
 .destaque p {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   font-family: var(--fonte-secundaria);
   font-weight: 400;
   margin-top: 1.5rem;
-  width: 45%;
+  width: 50%;
   margin: 0 auto;
   margin-top: 40px;
 }
@@ -275,7 +275,7 @@ header nav ul li .btn-compliance:hover {
 
 #servicos p {
   font-family: var(--fonte-secundaria);
-  text-align: justify;
+  /* text-align: justify; */
 }
 
 #servicos .esquerda,
@@ -463,6 +463,10 @@ footer nav ul li a {
   font-size: 1rem;
 }
 
+footer .logo-footer img {
+  width: 60%;
+}
+
 footer .container-footer {
   display: flex;
   width: 100vw;
@@ -473,13 +477,13 @@ footer .container-footer {
 footer .container-externo-social {
   display: flex;
   flex-direction: column;
-  gap: 20%;
+  gap: 15%;
   margin: 5% 0;
 }
 
 footer .social-media {
   display: flex;
-  gap: 50px;
+  gap: 35px;
 }
 
 footer .container-interno {
@@ -496,7 +500,7 @@ footer .social-media .social-icons {
 }
 
 footer .social-media .social-icons .icone {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 footer .direitos-reservados {
@@ -532,13 +536,23 @@ footer a {
 }
 
 /* Responsividade */
-@media (max-width: 1024px) {
+@media (max-width: 1080px) {
   .hero-content h1 {
     font-size: 3.75rem;
     line-height: 4.5rem;
   }
 
+  #quem-somos h2 {
+    width: 90%;
+  }
 
+  .destaque p {
+    width: 70%;
+  }
+
+  footer .logo-footer img {
+    width: 60%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -548,9 +562,17 @@ footer a {
     gap: 15px;
   }
 
+  header .container .logo img {
+    width: 50%;
+  }
+
   .hero-content h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     line-height: 4rem;
+  }
+
+  #quem-somos .equipe {
+    width: 80%;
   }
 
   #quem-somos .content {
@@ -558,18 +580,18 @@ footer a {
   }
 
   #quem-somos h2 {
+    width: 70%;
     font-size: 2rem;
     line-height: 3rem;
   }
   
   .destaque h2 {
-    font-size: 2rem;
-    width: 60%;
+    font-size: 3.5rem;
   }
 
   .destaque p {
-    font-size: 0.8rem;
-    width: 100%;
+    font-size: 1rem;
+    width: 60%;
   }
 
   #servicos .esquerda,
@@ -605,7 +627,15 @@ footer a {
   }
 
   footer .logo-footer img {
-    width: 60%;
+    width: 40%;
+  }
+
+  footer .social-media {
+    gap: 15px;
+  }
+
+  footer .social-media .social-icons .icone {
+    font-size: 1.3rem;
   }
 
   footer .container-externo-social {
@@ -615,13 +645,16 @@ footer a {
 
 @media (max-width:425px) {
   .hero-content h1 {
-    font-size: 2rem;
-    line-height: 3rem;
+    font-size: 3rem;
+    line-height: 3.5rem;
   }
 
   .destaque h2 {
-    font-size: 1.7rem;
-    min-width: 90%;
+    font-size: 2.5rem;
+  }
+
+  .destaque p {
+    width: 80%;    
   }
   
   #servicos img {
@@ -633,19 +666,24 @@ footer a {
   }
 
   .final-content button {
-    margin-top: -45px;
+    margin-top: -40px;
     padding: 10px 30px;
     font-size: 0.5rem;
   }
 
+  footer .logo-footer img {
+    width: 50%;
+  }
+
   footer .social-media {
     display: flex;
-    gap: 35px;
+    gap: 15px;
   }
 
   footer .social-media .social-icons .icone {
-    font-size: 1.75rem;
+    font-size: 1.2rem;
   }
+  
 
   footer p {
     font-size: 0.6rem;
@@ -653,7 +691,18 @@ footer a {
   
 }
 
+@media (max-width:375px) {
+  footer .logo-footer img {
+    width: 60%;
+  }
+}
+
 @media (max-width:345px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+
   .hero-content button {
     padding: 11px 16px;
   }
@@ -666,6 +715,14 @@ footer a {
 
   #quem-somos .equipe {
     width: 100%;
+  }
+
+  .destaque h2 {
+    font-size: 2rem;
+  }
+
+  .destaque p {
+    font-size: 0.8rem;
   }
 
   #servicos .esquerda .conteudo-esquerda .titulo-esquerda h4,
@@ -691,8 +748,13 @@ footer a {
     margin-bottom: 5%;
   }
 
+  footer .logo-footer img {
+    width: 40%;
+  }
+
   footer .container-interno {
     justify-content: center;
+    margin-left: 0;
   }
 
   footer .social-media {
