@@ -126,7 +126,6 @@ header nav ul li .btn-compliance:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 40px;
 }
 
 .parceiros img {
@@ -149,7 +148,7 @@ header nav ul li .btn-compliance:hover {
 
 .slide-track {
   display: flex;
-  width: calc(20px * 12);
+  width: calc(250px * 12);
   animation: scroll 15s linear infinite;
 }
 
@@ -168,7 +167,7 @@ header nav ul li .btn-compliance:hover {
       transform: translateX(0);
   }
   100% {
-      transform: translateX(calc(-250px * 3)); /* Ajuste o valor conforme o número de imagens */
+      transform: translateX(calc(-250px * 6)); /* Ajuste o valor conforme o número de imagens */
   }
 }
 
@@ -183,7 +182,7 @@ header nav ul li .btn-compliance:hover {
   font-size: 4rem;
   font-weight: 400;
   color: var(--cor-terciaria);
-  line-height: 100%;
+  line-height: 5rem;
   width: 70%;
   margin: 0 auto;
 }
@@ -191,6 +190,7 @@ header nav ul li .btn-compliance:hover {
 @media (max-width: 768px) {
   #quem-somos h2 {
     font-size: 2rem;
+    line-height: 3rem;
   }
 }
 
@@ -365,10 +365,8 @@ header nav ul li .btn-compliance:hover {
 
 #servicos .direita .conteudo-direita .titulo-direita {
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
-  text-align: center;
-  gap: 10%;
+  gap: 5%;
   font-size: 3rem;
 }
 
@@ -429,8 +427,8 @@ header nav ul li .btn-compliance:hover {
 
 .final .background-final {
   width: 100%;
-  height: 560px;
   object-fit: cover;
+  object-position: center;
 }
 
 .container-final {
@@ -461,7 +459,7 @@ header nav ul li .btn-compliance:hover {
   border: none;
   margin-top: -100px;
   padding: 15px 40px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   cursor: pointer;
   border-radius: 30px;
   transition: background 0.3s;
@@ -476,11 +474,6 @@ footer {
   background: var(--cor-terciaria);
   color: var(--cor-primaria);
   display: flex;
-}
-
-
-footer .logo-footer img {
-  width: 60%;
 }
 
 footer nav ul li a {
@@ -504,14 +497,24 @@ footer .container-externo-social {
 
 footer .social-media {
   display: flex;
-  gap: 30px;
+  gap: 50px;
+}
+
+footer .container-interno {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
 }
 
 footer .social-media .social-icons {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
+}
+
+footer .social-media .social-icons .icone {
+  font-size: 2.5rem;
 }
 
 footer .direitos-reservados {
@@ -552,6 +555,8 @@ footer a {
     font-size: 3.75rem;
     line-height: 4.5rem;
   }
+
+
 }
 
 @media (max-width: 768px) {
@@ -598,13 +603,12 @@ footer a {
     width: 100px;
   }
 
-  footer .container-externo-social {
-    gap: 5%;
+  footer .logo-footer img {
+    width: 60%;
   }
 
-  footer .social-media {
-    flex-direction: column;
-    align-items: flex-start;
+  footer .container-externo-social {
+    gap: 5%;
   }
 }
 
@@ -613,11 +617,29 @@ footer a {
     font-size: 2rem;
     line-height: 3rem;
   }
-  
+
+  .destaque h2 {
+    font-size: 1.7rem;
+    min-width: 90%;
+  }
+
+  .final .background-final {
+    
+  }
+
   .final-content button {
     margin-top: -45px;
     padding: 10px 30px;
     font-size: 0.5rem;
+  }
+
+  footer .social-media {
+    display: flex;
+    gap: 35px;
+  }
+
+  footer .social-media .social-icons .icone {
+    font-size: 1.75rem;
   }
 
   footer p {
@@ -627,9 +649,14 @@ footer a {
 }
 
 @media (max-width:345px) {
-
   .hero-content button {
     padding: 11px 16px;
+  }
+
+  #quem-somos h2 {
+    font-size: 2rem;
+    line-height: 3rem;
+    width: 100%;
   }
 
   #quem-somos .equipe {
@@ -648,6 +675,10 @@ footer a {
     align-self: center;
   }
 
+  #principios h2 {
+    font-size: 2rem;
+  }
+
   .final-content button {
     padding: 5px 15px;
   }
@@ -663,8 +694,14 @@ footer a {
     margin-bottom: 5%;
   }
 
+  footer .container-interno {
+    justify-content: center;
+  }
+
   footer .social-media {
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
   }
 
   footer .direitos-reservados {
