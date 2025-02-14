@@ -241,9 +241,8 @@ header nav ul li .btn-compliance:hover {
 
 .destaque h2 {
   font-family: var(--fonte-primaria), sans-serif;
-  font-size: 5rem;
+  font-size: 4.5rem;
   font-weight: 400;
-  line-height: 100%;
   margin: 0 auto;
 }
 
