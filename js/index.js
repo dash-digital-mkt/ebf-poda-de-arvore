@@ -20,7 +20,7 @@ document.getElementById('menu-icon').addEventListener('click', function() {
             })
         });
     } else {
-        menuIcon.src = "./images/hamburguer.svg";
+        menuIcon.src = "/images/hamburguer.svg";
         menuLogo.classList.remove('visible');
 
         // Delay da atualizacao texto
