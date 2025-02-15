@@ -35,3 +35,21 @@ document.getElementById('menu-icon').addEventListener('click', function() {
         }, 300); 
     }
 });
+
+document.getElementById("button-entre-em-contato").addEventListener('click', function() {
+    document.querySelector(".entre-em-contato-container").style.display = 'flex';
+    document.querySelector(".entre-em-contato-container").style['justify-content'] = 'center';
+    document.querySelector(".entre-em-contato-container").style['align-items'] = 'center';
+    document.querySelector(".overlay").style.display = 'block';
+})
+
+function entrarEmContato() {
+    const nome = document.getElementById("nome-entre-em-contato").value
+    const email = document.getElementById("email-entre-em-contato").value
+    const telefone = "+55" + document.getElementById("telefone-entre-em-contato").value
+    const mensagem = document.getElementById("mensagem-entre-em-contato").value
+    const text = "Nome: " + nome + "\nEmail: " + email + "\nTelefone: " + telefone + "\n\n" + mensagem;
+    const uri = `https://wa.me/+5582999848562?text=${text}`;
+    const encoded = encodeURI(uri);
+    console.log(encoded);
+}
