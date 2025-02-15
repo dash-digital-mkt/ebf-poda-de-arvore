@@ -131,13 +131,8 @@ header nav ul li .btn-compliance:hover {
 
 .parceiros img {
   max-width: 80%;
-  filter: grayscale(100%);
   transition: filter 0.3s;
   object-fit: contain;
-}
-
-.parceiros img:hover {
-  filter: grayscale(0%);
 }
 
 /* animacao */
@@ -437,7 +432,6 @@ header nav ul li .btn-compliance:hover {
 
 .final-content button {
   background: var(--cor-terciaria);
-  color: var(--cor-branca);
   border: none;
   margin-top: -100px;
   padding: 15px 40px;
@@ -445,6 +439,10 @@ header nav ul li .btn-compliance:hover {
   cursor: pointer;
   border-radius: 30px;
   transition: background 0.3s;
+}
+
+.final-content button a {
+  color: var(--cor-primaria);
 }
 
 .final-content button:hover {
