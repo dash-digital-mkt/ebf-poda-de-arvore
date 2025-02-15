@@ -101,7 +101,7 @@ header nav ul li .btn-compliance:hover {
 
 .hero-content button {
   background: var(--cor-secundaria);
-  color: var(--cor-branca);
+  color: var(--cor-primaria);
   border: none;
   padding: 22px 32px;
   font-size: 1.2rem;
@@ -184,7 +184,7 @@ header nav ul li .btn-compliance:hover {
 }
 
 
-#quem-somos .highlight {
+.highlight {
   color: var(--cor-secundaria);
 }
 
@@ -192,7 +192,7 @@ header nav ul li .btn-compliance:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem 6rem;
+  gap: 6rem;
   margin-top: 40px;
   padding: 0 15%;
 }
@@ -229,7 +229,7 @@ header nav ul li .btn-compliance:hover {
 /* Destaque */
 .destaque {
   background: var(--cor-terciaria);
-  color: var(--cor-branca);
+  color: var(--cor-primaria);
   padding: 10% 0;
   text-align: center;
 }
@@ -239,10 +239,6 @@ header nav ul li .btn-compliance:hover {
   font-size: 4.5rem;
   font-weight: 400;
   margin: 0 auto;
-}
-
-.destaque .highlight {
-  color: var(--cor-secundaria);
 }
 
 .destaque p {
@@ -362,10 +358,6 @@ header nav ul li .btn-compliance:hover {
   font-weight: 300;
 }
 
-#principios .highlight {
-  color: var(--cor-secundaria);
-}
-
 #principios p {
   font-size: 1.1rem;
   margin-bottom: 40px;
@@ -457,7 +449,7 @@ footer {
 }
 
 footer nav ul li a {
-  color: var(--cor-branca);
+  color: var(--cor-primaria);
   font-size: 1rem;
 }
 
