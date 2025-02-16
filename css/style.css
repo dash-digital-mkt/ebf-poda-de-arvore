@@ -528,13 +528,14 @@ footer a {
 .entre-em-contato-container {
   display: none;
   position: fixed;
-
   top: 50%;
   left: 50%;
   z-index: 1001;
-  width: 90vw;
-  height: 90vh;
-  transform: translate(-50%, -50%); /* Centraliza corretamente */
+  width: 80vw;
+  height: 80vh;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
 }
 
 .overlay {
@@ -543,25 +544,30 @@ footer a {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.5); /* Fundo escuro semi-transparente */
-  z-index: 1001; /* Atrás do modal */
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1001;
   display: none;
 }
 
 .entre-em-contato {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  height: 100%;
+  width: 80vw;
+  height: 80vh;
+  min-width: 500px;
+  min-height: 300px;
   justify-content: space-between;
   border-radius: 8px;
+  overflow:auto;
 }
 
 .entre-em-contato-esquerda {
+  display: flex;
+  flex-direction: column;
   background-color: var(--cor-terciaria);
-  width: 50%;
+  width: 100%;
   height: 100%;
-  border-radius: 8px;
+  border-radius: 8px 0px 0px 8px;
   padding: 48px;
 }
 
@@ -570,13 +576,15 @@ footer a {
   justify-content: center;
   align-items: center;
   background-color: var(--cor-secundaria);
-  border-radius: 8px;
-  width: 50%;
+  border-radius: 0px 8px 8px 0px;
+  width: 100%;
   height: 100%;
-  padding: 48px;
+  padding: 5%;
 }
 
 .entre-em-contato-esquerda-heading {
+  display: flex;
+  flex-direction: column;
   font-size: 3.5rem;
 }
 
@@ -585,9 +593,9 @@ footer a {
   flex-direction: column;
   background-color: var(--cor-terciaria);
   width: 100%;
-  height: 654px;
+  height: 100%;
   border-radius: 8px;
-  padding: 48px;
+  padding: 20%;
 }
 
 .entre-em-contato-direita-heading {
@@ -613,4 +621,32 @@ footer a {
   cursor: pointer;
   font-size: 1rem;
   border-radius: 100px;
+}
+
+.entre-em-contato-esquerda-container {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #253836;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.entre-em-contato-esquerda-email-label, .entre-em-contato-esquerda-wpp-label, .entre-em-contato-esquerda-endereco-label {
+  color: #969F9E;
+}
+
+.entre-em-contato-esquerda-email-valor, .entre-em-contato-esquerda-wpp-valor, .entre-em-contato-esquerda-endereco-valor {
+  color: var(--cor-primaria);
+}
+
+.entre-em-contato-esquerda-heading-primario {
+  color: var(--cor-primaria)
+}
+
+.entre-em-contato-esquerda-heading-secundario {
+  color: var(--cor-secundaria)
+}
+
+.sublinhado {
+  text-decoration: underline;
 }

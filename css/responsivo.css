@@ -112,6 +112,20 @@
     footer .container-externo-social {
         gap: 5%;
     }
+
+    .entre-em-contato {
+        flex-direction: column;
+    }
+
+    .entre-em-contato-esquerda-heading {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:620px) {
+    .entre-em-contato {
+        width: 80%;
+    }
 }
 
 @media (max-width:455px) {
