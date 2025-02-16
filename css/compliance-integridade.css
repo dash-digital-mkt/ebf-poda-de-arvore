@@ -271,13 +271,6 @@
     margin-right: 15%;
 }
 
-.politica-prevencao-assedio h2,
-.container-links-programas .titulo-links-programas h2,
-.container-saber .titulo-saber h2,
-.container-fluxograma .titulo-fluxograma h2 {
-    margin-bottom: 10%;
-}
-
 /* diferenca canal de denuncias e sac */
 #diferenca-denuncia-sac {
     background: var(--cor-primaria);
@@ -410,7 +403,6 @@
 }
 
 @media (max-width:1235px) {
-
     .conteudo-fluxograma .titulo-conteudo-fluxograma div,
     .conteudo-fluxograma .titulo-conteudo-fluxograma h4 {
         font-size: 2rem;
@@ -433,13 +425,20 @@
         padding-right: 0;
         padding-left: 5%;
     }
-
+    
     .titulo-saber,
     .titulo-fluxograma,
     .titulo-links-programas {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .titulo-saber h2:last-child,
+    .titulo-fluxograma h2:last-child,
+    .titulo-links-programas h2:last-child{
+        margin-bottom: 25px;
     }
 
     .politica-prevencao-assedio h2,
