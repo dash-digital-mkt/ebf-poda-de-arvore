@@ -55,7 +55,7 @@ function entrarEmContato() {
     const telefone = "+55" + document.getElementById("telefone-entre-em-contato").value
     const mensagem = document.getElementById("mensagem-entre-em-contato").value
     const text = "Nome: " + nome + "\nEmail: " + email + "\nTelefone: " + telefone + "\n\n" + mensagem;
-    const uri = `https://wa.me/+5582999848562?text=${text}`;
+    const uri = `https://wa.me/+556198052164?text=${text}`;
     const encoded = encodeURI(uri);
     window.open(encoded, "_blank");
 }
