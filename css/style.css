@@ -17,7 +17,7 @@ header.scrolled {
 
 header .container {
   display: flex;
-  text-wrap: wrap;
+  text-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
   padding: 0 5%;
@@ -163,7 +163,7 @@ header nav ul li .btn-compliance:hover {
       transform: translateX(0);
   }
   100% {
-      transform: translateX(calc(-250px * 6));
+      transform: translateX(calc(-250px * 6)); /* Ajuste o valor conforme o número de imagens */
   }
 }
 
@@ -203,6 +203,7 @@ header nav ul li .btn-compliance:hover {
 }
 
 #quem-somos p {
+  /* text-align: justify; */
   font-size: 1.1rem;
   font-weight: 400;
   color: var(--cor-texto);
@@ -250,9 +251,7 @@ header nav ul li .btn-compliance:hover {
   margin-top: 40px;
 }
 
-.colapsavel {
-  display: none;
-}
+/* Serviços */
 
 #servicos img {
   width: 40%;
@@ -267,6 +266,7 @@ header nav ul li .btn-compliance:hover {
 
 #servicos p {
   font-family: var(--fonte-secundaria);
+  /* text-align: justify; */
 }
 
 #servicos .esquerda,
@@ -532,6 +532,7 @@ footer a {
   left: 50%;
   z-index: 1001;
   width: 80vw;
+  height: 80vh;
   transform: translate(-50%, -50%);
   align-items: center;
   justify-content: center;
@@ -551,23 +552,13 @@ footer a {
 .entre-em-contato {
   display: flex;
   flex-direction: row;
-  width: 100vw;
+  width: 80vw;
   height: 80vh;
+  min-width: 500px;
+  min-height: 300px;
+  justify-content: space-between;
   border-radius: 8px;
   overflow:auto;
-  animation: fadeInAnimation ease 0.5s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-
-@keyframes fadeInAnimation {
-  0% {
-      opacity: 0;
-  }
-
-  100% {
-      opacity: 1;
-  }
 }
 
 .entre-em-contato-esquerda {
@@ -575,8 +566,9 @@ footer a {
   flex-direction: column;
   background-color: var(--cor-terciaria);
   width: 100%;
+  height: 100%;
   border-radius: 8px 0px 0px 8px;
-  padding: 5%;
+  padding: 48px;
 }
 
 .entre-em-contato-direita {
@@ -586,7 +578,8 @@ footer a {
   background-color: var(--cor-secundaria);
   border-radius: 0px 8px 8px 0px;
   width: 100%;
-  padding: 2%;
+  height: 100%;
+  padding: 5%;
 }
 
 .entre-em-contato-esquerda-heading {
@@ -602,22 +595,12 @@ footer a {
   width: 100%;
   height: 100%;
   border-radius: 8px;
-  padding: 10%;
-  color: #FFFFFF99;
+  padding: 20%;
 }
 
 .entre-em-contato-direita-heading {
   font: var(--fonte-primaria);
   color: var(--cor-primaria);
-  margin-bottom: 10px;
-  font-size: 2.5rem;
-}
-
-.entre-em-contato-direita-texto {
-  font-size: 1.3rem;
-  margin-bottom: 10px;
-  font-family: var(--fonte-secundaria);
-  font-weight: 100;
 }
 
 .inputs-entre-em-contato {
@@ -625,35 +608,19 @@ footer a {
   flex-direction: column;
   margin-top: 5px;
   margin-bottom: 5px;
-  font-size: 1.5rem;
-  font-family: var(--fonte-secundaria);
-  font-weight: 100;
 }
 
 .inputs-entre-em-contato input {
-  all: unset;
-  border: 1px solid #FFFFFF99;
   border-radius: 4px;
   padding: 5px;
-  background-color: transparent;
-  margin-bottom: 20px;
-  padding: 8px 16px;
-}
-
-.inputs-entre-em-contato input::placeholder {
-  font-size: 1rem;
 }
 
 #entrar-em-contato {
-  all: unset;
-  width: 150px;
-  height: 50px;
+  width: 100px;
+  /* min-width: 5px; */
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1rem;
   border-radius: 100px;
-  background-color: var(--cor-secundaria);
-  text-align: center;
-  color: var(--cor-primaria);
 }
 
 .entre-em-contato-esquerda-container {
@@ -662,30 +629,22 @@ footer a {
   border-top: 1px solid #253836;
   padding-top: 5%;
   padding-bottom: 5%;
-  font-size: 1.5rem;
 }
 
-.entre-em-contato-label {
+.entre-em-contato-esquerda-email-label, .entre-em-contato-esquerda-wpp-label, .entre-em-contato-esquerda-endereco-label {
   color: #969F9E;
-  font-size: 1.5rem;
-  font-family: var(--fonte-secundaria);
-  font-weight: 100;
 }
 
-.entre-em-contato-valor {
+.entre-em-contato-esquerda-email-valor, .entre-em-contato-esquerda-wpp-valor, .entre-em-contato-esquerda-endereco-valor {
   color: var(--cor-primaria);
-  word-wrap: break-word;
 }
 
 .entre-em-contato-esquerda-heading-primario {
-  color: var(--cor-primaria);
-  font-size: 3.5rem;
-  margin-top: -20px;
+  color: var(--cor-primaria)
 }
 
 .entre-em-contato-esquerda-heading-secundario {
-  color: var(--cor-secundaria);
-  font-size: 3.5rem;
+  color: var(--cor-secundaria)
 }
 
 .sublinhado {

@@ -49,29 +49,13 @@ document.getElementById("button-entre-em-contato").addEventListener('click', fun
     overlay.style.display = 'block';
 })
 
-document.querySelector('.seta-servicos').addEventListener('click', (event) => {
-    event.preventDefault();
-    const colapsaveis = document.querySelectorAll('.colapsavel');
-    colapsaveis.forEach(colapsavel => {
-        if (colapsavel.style.display !== 'block') {            
-            colapsavel.style.display = 'block';
-            if (colapsavel.classList.contains('destaque')) {
-                colapsavel.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
-        } else {
-            colapsavel.style.display = 'none';
-        }
-    });
-})
-
-
 function entrarEmContato() {
     const nome = document.getElementById("nome-entre-em-contato").value
     const email = document.getElementById("email-entre-em-contato").value
     const telefone = "+55" + document.getElementById("telefone-entre-em-contato").value
     const mensagem = document.getElementById("mensagem-entre-em-contato").value
     const text = "Nome: " + nome + "\nEmail: " + email + "\nTelefone: " + telefone + "\n\n" + mensagem;
-    const uri = `https://wa.me/+556198052164?text=${text}`;
+    const uri = `https://wa.me/+5582999848562?text=${text}`;
     const encoded = encodeURI(uri);
-    window.open(encoded, "_blank");
+    console.log(encoded);
 }

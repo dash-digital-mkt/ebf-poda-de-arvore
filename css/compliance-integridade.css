@@ -262,11 +262,6 @@
     font-size: 1.2rem;
 }
 
-.titulo-links a {
-    all: unset;
-    cursor: pointer;
-}
-
 .container-links-programas .conteudo-saber {
     margin-right: 15%;
 }
@@ -278,14 +273,146 @@
     margin-bottom: 10%;
 }
 
+/* diferenca canal de denuncias e sac */
+#diferenca-denuncia-sac {
+    background: var(--cor-primaria);
+    color: var(--cor-terciaria);
+    padding: 5% 3%;
+    text-align: center;
+}
+
+#diferenca-denuncia-sac .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#diferenca-denuncia-sac h2,
+#diferenca-denuncia-sac h3 {
+    font-family: var(--fonte-primaria);
+    font-size: 5rem;
+    font-weight: 300;
+    line-height: 120%;
+}
+
+#diferenca-denuncia-sac p {
+    font-size: 1.1rem;
+    margin-bottom: 5%;
+    color: var(--cor-primaria);
+    font-family: var(--fonte-secundaria);
+}
+
+#diferenca-denuncia-sac .lista-diferenca-denuncia-sac {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+#diferenca-denuncia-sac .lista-diferenca-denuncia-sac div {
+    padding: 0 30px;
+    background: #163b2d;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+#diferenca-denuncia-sac h3 {
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    margin-bottom: 15px;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+/* trecho abaixo diferenca denuncia sac */
+#diferenca-denuncia-sac .texto-canal-denuncia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8% 0;
+}
+
+#diferenca-denuncia-sac .texto-canal-denuncia p {
+    color: var(--cor-texto);
+    width: 60%;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* canal de denuncias */
+#canal-denuncias {
+    margin: 10% 5%;
+    text-align: center;
+}
+
+#canal-denuncias .container {
+    display: flex;
+    flex-direction: column;
+    background-color: #163b2d;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+#canal-denuncias h2 {
+    font-family: var(--fonte-primaria);
+    color: var(--cor-secundaria);
+    font-size: 5rem;
+    font-weight: 300;
+    margin-top: 10%;
+    line-height: 120%;
+}
+
+#canal-denuncias .conteudo-denuncia {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+}
+
+#canal-denuncias .conteudo-denuncia p {
+    width: 100%;
+    font-size: 1.1rem;
+    color: var(--cor-primaria);
+    font-family: var(--fonte-secundaria);
+    margin-bottom: 5%;
+}
+
+#canal-denuncias .conteudo-denuncia p:not(:first-child) {
+    border-left: 1px solid var(--cor-branca);
+    padding-left: 20px;
+}
+
+.botao-denuncia button {
+    background-color: var(--cor-secundaria);
+    border: none;
+    padding: 15px 40px;
+    margin-top: 10%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background 0.3s;
+}
+
+.botao-denuncia button a {
+    color: var(--cor-primaria);
+}
+
 @media (max-width:1235px) {
+
     .conteudo-fluxograma .titulo-conteudo-fluxograma div,
     .conteudo-fluxograma .titulo-conteudo-fluxograma h4 {
         font-size: 2rem;
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1080px) {
     .container-saber {
         flex-direction: column;
         gap: 25px;
@@ -322,22 +449,163 @@
         margin-left: 0;
         width: 100%;
     }
+
+    #diferenca-denuncia-sac h2,
+    #canal-denuncias h2 {
+        font-size: 3.75rem;
+    }
+
+    #diferenca-denuncia-sac .texto-canal-denuncia p {
+        width: 80%;
+    }
 }
 
-@media (max-width:500) {
+@media (max-width:920px) {
+    #diferenca-denuncia-sac h3 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width:800px) {
+    #diferenca-denuncia-sac .texto-canal-denuncia p {
+        width: 62%;
+    }
+
+    #diferenca-denuncia-sac h3 {
+        font-size: 2.75rem;
+    }
+}
+
+@media (max-width:768px) {
+    #diferenca-denuncia-sac h2,
+    #canal-denuncias h2 {
+        font-size: 3.25rem;
+    }
+
+    #diferenca-denuncia-sac .legenda-principios {
+        font-size: 0.8rem;
+    }
+
+    #diferenca-denuncia-sac .lista-diferenca-denuncia-sac {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #diferenca-denuncia-sac .lista-diferenca-denuncia-sac div {
+        width: 100%;
+    }
+
+    #canal-denuncias .conteudo-denuncia {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #canal-denuncias .conteudo-denuncia p {
+        margin-bottom: 0;
+        padding: 30px 0;
+    }
+    
+    #canal-denuncias .conteudo-denuncia p:not(:first-child) {
+        border-left: 0px;
+        border-top: 1px solid var(--cor-branca);
+        padding-left: 0;
+    }
+
+    .politica-prevencao-assedio p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width:660px) {
+
+    #diferenca-denuncia-sac h2,
+    #diferenca-denuncia-sac h3,
+    #canal-denuncias h2 {
+        font-size: 3rem;
+    }
+
+    #diferenca-denuncia-sac .texto-canal-denuncia p {
+        width: 79%;
+    }
+}
+
+@media (max-width:565px) {
+
+    #diferenca-denuncia-sac h2,
+    #diferenca-denuncia-sac h3,
+    #canal-denuncias h2 {
+        font-size: 2.5rem;
+    }
+
+    #diferenca-denuncia-sac .texto-canal-denuncia p {
+        width: 79%;
+    }
+}
+
+@media (max-width:505px) {
+
     .politica-prevencao-assedio h2,
     .container-links-programas .titulo-links-programas h2,
     .container-saber .titulo-saber h2,
     .container-fluxograma .titulo-fluxograma h2 {
         font-size: 2.75rem;
     }
+
+    #diferenca-denuncia-sac h2,
+    #diferenca-denuncia-sac h3,
+    #canal-denuncias h2 {
+        font-size: 2.25rem;
+    }
+
+    #diferenca-denuncia-sac .texto-canal-denuncia p {
+        width: 88%;
+    }
 }
 
-@media (max-width:425) {
+@media (max-width:465px) {
+    #diferenca-denuncia-sac .texto-canal-denuncia p {
+        width: 100%;
+    }
+
+    #canal-denuncias .conteudo-denuncia p {
+        font-size: 0.9rem;
+    }
+
+    .politica-prevencao-assedio p {
+        width: 90%;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width:435px) {
+
     .politica-prevencao-assedio h2,
     .container-links-programas .titulo-links-programas h2,
     .container-saber .titulo-saber h2,
     .container-fluxograma .titulo-fluxograma h2 {
         font-size: 1.5rem;
+    }
+
+    #diferenca-denuncia-sac h2,
+    #diferenca-denuncia-sac h3,
+    #canal-denuncias h2 {
+        font-size: 1.75rem;
+    }
+
+    #diferenca-denuncia-sac .texto-canal-denuncia p {
+        font-size: 0.7rem;
+        width: 80%;
+    }
+}
+
+@media (max-width:400px) {
+    #diferenca-denuncia-sac .texto-canal-denuncia p {
+        width: 88%;
+    }
+}
+
+@media (max-width:368px) {
+    #diferenca-denuncia-sac .texto-canal-denuncia p {
+        width: 75%;
     }
 }
