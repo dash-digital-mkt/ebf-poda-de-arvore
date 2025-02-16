@@ -459,6 +459,10 @@
         font-size: 3.75rem;
     }
 
+    #canal-denuncias .conteudo-denuncia {
+        margin-top: 0;
+    }
+
     #diferenca-denuncia-sac .texto-canal-denuncia p {
         width: 80%;
     }
