@@ -262,6 +262,11 @@
     font-size: 1.2rem;
 }
 
+.titulo-links a {
+    all: unset;
+    cursor: pointer;
+}
+
 .container-links-programas .conteudo-saber {
     margin-right: 15%;
 }
