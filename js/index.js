@@ -49,6 +49,22 @@ document.getElementById("button-entre-em-contato").addEventListener('click', fun
     overlay.style.display = 'block';
 })
 
+document.querySelector('.seta-servicos').addEventListener('click', (event) => {
+    event.preventDefault();
+    const colapsaveis = document.querySelectorAll('.colapsavel');
+    colapsaveis.forEach(colapsavel => {
+        if (colapsavel.style.display !== 'block') {            
+            colapsavel.style.display = 'block';
+            if (colapsavel.classList.contains('destaque')) {
+                colapsavel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        } else {
+            colapsavel.style.display = 'none';
+        }
+    });
+})
+
+
 function entrarEmContato() {
     const nome = document.getElementById("nome-entre-em-contato").value
     const email = document.getElementById("email-entre-em-contato").value
