@@ -17,7 +17,7 @@ header.scrolled {
 
 header .container {
   display: flex;
-  text-wrap: nowrap;
+  text-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 0 5%;
@@ -532,7 +532,7 @@ footer a {
   left: 50%;
   z-index: 1001;
   width: 80vw;
-  height: 80vh;
+  /* height: 80vh; */
   transform: translate(-50%, -50%);
   align-items: center;
   justify-content: center;
@@ -552,11 +552,8 @@ footer a {
 .entre-em-contato {
   display: flex;
   flex-direction: row;
-  width: 80vw;
+  width: 100vw;
   height: 80vh;
-  min-width: 500px;
-  min-height: 300px;
-  justify-content: space-between;
   border-radius: 8px;
   overflow:auto;
 }
@@ -566,9 +563,9 @@ footer a {
   flex-direction: column;
   background-color: var(--cor-terciaria);
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   border-radius: 8px 0px 0px 8px;
-  padding: 48px;
+  padding: 5%;
 }
 
 .entre-em-contato-direita {
@@ -578,8 +575,8 @@ footer a {
   background-color: var(--cor-secundaria);
   border-radius: 0px 8px 8px 0px;
   width: 100%;
-  height: 100%;
-  padding: 5%;
+  /* height: 100%; */
+  padding: 2%;
 }
 
 .entre-em-contato-esquerda-heading {
@@ -595,12 +592,22 @@ footer a {
   width: 100%;
   height: 100%;
   border-radius: 8px;
-  padding: 20%;
+  padding: 10%;
+  color: #FFFFFF99;
 }
 
 .entre-em-contato-direita-heading {
   font: var(--fonte-primaria);
   color: var(--cor-primaria);
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+}
+
+.entre-em-contato-direita-texto {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  font-family: var(--fonte-secundaria);
+  font-weight: 100;
 }
 
 .inputs-entre-em-contato {
@@ -608,19 +615,35 @@ footer a {
   flex-direction: column;
   margin-top: 5px;
   margin-bottom: 5px;
+  font-size: 1.5rem;
+  font-family: var(--fonte-secundaria);
+  font-weight: 100;
 }
 
 .inputs-entre-em-contato input {
+  all: unset;
+  border: 1px solid #FFFFFF99;
   border-radius: 4px;
   padding: 5px;
+  background-color: transparent;
+  margin-bottom: 20px;
+  padding: 8px 16px;
+}
+
+.inputs-entre-em-contato input::placeholder {
+  font-size: 1rem;
 }
 
 #entrar-em-contato {
-  width: 100px;
-  /* min-width: 5px; */
+  all: unset;
+  width: 150px;
+  height: 50px;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.5rem;
   border-radius: 100px;
+  background-color: var(--cor-secundaria);
+  text-align: center;
+  color: var(--cor-primaria);
 }
 
 .entre-em-contato-esquerda-container {
@@ -629,22 +652,30 @@ footer a {
   border-top: 1px solid #253836;
   padding-top: 5%;
   padding-bottom: 5%;
+  font-size: 1.5rem;
 }
 
-.entre-em-contato-esquerda-email-label, .entre-em-contato-esquerda-wpp-label, .entre-em-contato-esquerda-endereco-label {
+.entre-em-contato-label {
   color: #969F9E;
+  font-size: 1.5rem;
+  font-family: var(--fonte-secundaria);
+  font-weight: 100;
 }
 
-.entre-em-contato-esquerda-email-valor, .entre-em-contato-esquerda-wpp-valor, .entre-em-contato-esquerda-endereco-valor {
+.entre-em-contato-valor {
   color: var(--cor-primaria);
+  word-wrap: break-word;
 }
 
 .entre-em-contato-esquerda-heading-primario {
-  color: var(--cor-primaria)
+  color: var(--cor-primaria);
+  font-size: 3.5rem;
+  margin-top: -20px;
 }
 
 .entre-em-contato-esquerda-heading-secundario {
-  color: var(--cor-secundaria)
+  color: var(--cor-secundaria);
+  font-size: 3.5rem;
 }
 
 .sublinhado {

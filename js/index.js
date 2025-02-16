@@ -57,5 +57,5 @@ function entrarEmContato() {
     const text = "Nome: " + nome + "\nEmail: " + email + "\nTelefone: " + telefone + "\n\n" + mensagem;
     const uri = `https://wa.me/+5582999848562?text=${text}`;
     const encoded = encodeURI(uri);
-    console.log(encoded);
+    window.open(encoded, "_blank");
 }

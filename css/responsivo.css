@@ -15,6 +15,27 @@
     footer .logo-footer img {
         width: 60%;
     }
+
+    .entre-em-contato-direita {
+        border-radius: 0px 0px 8px 8px;
+        padding: 3%;
+    }
+
+    .entre-em-contato-esquerda {
+        border-radius: 8px 8px 0px 0px;
+    }
+
+    .entre-em-contato-esquerda-heading {
+        font-size: 1.8rem;
+    }
+
+    .entre-em-contato-label {
+        font-size: 1.5rem;
+    }
+
+    .entre-em-contato-valor {
+        max-width: 17ch;
+    }
 }
 
 @media (max-width: 768px) {
@@ -116,15 +137,16 @@
     .entre-em-contato {
         flex-direction: column;
     }
-
-    .entre-em-contato-esquerda-heading {
-        font-size: 2rem;
-    }
 }
 
 @media (max-width:620px) {
     .entre-em-contato {
         width: 80%;
+    }
+
+    .entre-em-contato-container {
+        width: 100vw;
+        height: 100vh;
     }
 }
 
