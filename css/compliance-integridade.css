@@ -1,11 +1,8 @@
 .hero.hero-compliance {
-  height: 50vh;
+    height: 50vh;
 }
 
 .hero.hero-compliance {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: var(--cor-terciaria);
 }
 
@@ -13,19 +10,24 @@
     margin-bottom: 0;
 }
 
+/* o que precisa saber */
 .container-saber {
     display: flex;
     margin: 10% 5%;
-    gap: 30%;
+}
+
+.container-saber .titulo-saber {
+    text-wrap: nowrap;
 }
 
 .container-saber .titulo-saber h2 {
     font-size: 4.5rem;
     line-height: 1.2em;
+    margin-right: 150px;
 }
 
 .container-saber .conteudo-saber {
-    margin-right: 5%;
+    margin-right: 15%;
 }
 
 .conteudo-saber .titulo-conteudo {
@@ -33,6 +35,7 @@
     align-items: center;
     gap: 15px;
     padding-bottom: 10px;
+    width: 110%;
     border-bottom: 1px solid #D9D9D9;
 }
 
@@ -65,6 +68,32 @@
     transition: background 0.3s;
 }
 
+.conteudo-links-programas .titulo-conteudo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 10px;
+    width: 110%;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.conteudo-links-programas h4 {
+    color: var(--cor-terciaria);
+    font-weight: 400;
+}
+
+.conteudo-links-programas p {
+    margin: 15px 0;
+    font-family: var(--fonte-secundaria);
+}
+
+.conteudo-links-programas .botoes-saber {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* gestao */
 .container-gestao {
     background-color: var(--cor-primaria);
     display: flex;
@@ -96,9 +125,214 @@
     transition: background 0.3s;
 }
 
-@media (max-width: 768px) {
+/* FLUXOGRAMA DE DENUNCIAS */
+.container-fluxograma {
+    display: flex;
+    background-color: var(--cor-terciaria);
+    padding: 10% 5%;
+    width: 100%;
+}
+
+.container-fluxograma li::marker {
+    color: var(--cor-extra);
+}
+
+.container-fluxograma .titulo-fluxograma {
+    text-wrap: nowrap;
+}
+
+.container-fluxograma .titulo-fluxograma h2 {
+    font-size: 4.5rem;
+    line-height: 1.2em;
+    color: var(--cor-primaria);
+    font-weight: 400;
+    margin-right: 150px;
+}
+
+.conteudo-fluxograma .titulo-conteudo-fluxograma {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: -15%;
+    width: 110%;
+}
+
+.conteudo-fluxograma .linha-fluxograma {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 1px;
+    margin-left: -15% !important;
+    margin: 40px 0;
+}
+
+.container-fluxograma .lista-fluxograma {
+    list-style-type: disc;
+}
+
+.container-fluxograma .lista-fluxograma-final li:nth-child(n + 2) {
+    list-style-type: none;
+}
+
+.numero-fluxo-final {
+    font-weight: bold;
+}
+
+.numero-titulo {
+    border: 2px solid var(--cor-secundaria);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 55px;
+    max-width: 55px;
+    min-height: 55px;
+    max-height: 55px;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--cor-secundaria);
+}
+
+.conteudo-fluxograma h4 {
+    color: var(--cor-primaria);
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+.conteudo-fluxograma p {
+    margin: 15px 0;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-extra);
+}
+
+/* secao politica de assedio semelhante destaque */
+.politica-prevencao-assedio {
+    background: var(--cor-primaria);
+    color: var(--cor-primaria);
+    margin: 10%;
+    padding: 5% 5%;
+    text-align: center;
+}
+
+.politica-prevencao-assedio h2 {
+    font-family: var(--fonte-primaria);
+    color: var(--cor-terciaria);
+    font-size: 4.5rem;
+    font-weight: 400;
+    margin: 0 auto;
+}
+
+.politica-prevencao-assedio p {
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-texto);
+    font-weight: 400;
+    margin-top: 1.5rem;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+/* links-programas */
+.container-links-programas {
+    display: flex;
+    margin: 10% 5%;
+}
+
+.container-links-programas .titulo-links-programas {
+    text-wrap: nowrap;
+}
+
+.container-links-programas .titulo-links-programas h2 {
+    font-size: 4.5rem;
+    line-height: 1.2em;
+    margin-right: 150px;
+}
+
+.lista-compliance-links {
+    margin-right: 5%;
+}
+
+.titulo-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 10px;
+    width: 110%;
+    border-bottom: 1px solid #D9D9D9;
+    margin: 15px 0;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.2rem;
+}
+
+.container-links-programas .conteudo-saber {
+    margin-right: 15%;
+}
+
+.politica-prevencao-assedio h2,
+.container-links-programas .titulo-links-programas h2,
+.container-saber .titulo-saber h2,
+.container-fluxograma .titulo-fluxograma h2 {
+    margin-bottom: 10%;
+}
+
+@media (max-width:1235px) {
+    .conteudo-fluxograma .titulo-conteudo-fluxograma div,
+    .conteudo-fluxograma .titulo-conteudo-fluxograma h4 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 1000px) {
     .container-saber {
         flex-direction: column;
         gap: 25px;
+    }
+
+    .container-fluxograma,
+    .container-links-programas {
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    .container-fluxograma .conteudo-fluxograma {
+        padding-right: 0;
+        padding-left: 5%;
+    }
+
+    .titulo-saber,
+    .titulo-fluxograma,
+    .titulo-links-programas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .politica-prevencao-assedio h2,
+    .container-links-programas .titulo-links-programas h2,
+    .container-saber .titulo-saber h2,
+    .container-fluxograma .titulo-fluxograma h2 {
+        font-size: 4rem;
+        margin-right: 0;
+    }
+
+    .conteudo-fluxograma .titulo-conteudo-fluxograma {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width:500) {
+    .politica-prevencao-assedio h2,
+    .container-links-programas .titulo-links-programas h2,
+    .container-saber .titulo-saber h2,
+    .container-fluxograma .titulo-fluxograma h2 {
+        font-size: 2.75rem;
+    }
+}
+
+@media (max-width:425) {
+    .politica-prevencao-assedio h2,
+    .container-links-programas .titulo-links-programas h2,
+    .container-saber .titulo-saber h2,
+    .container-fluxograma .titulo-fluxograma h2 {
+        font-size: 1.5rem;
     }
 }

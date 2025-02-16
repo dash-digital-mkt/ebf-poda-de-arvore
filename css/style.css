@@ -503,7 +503,7 @@ footer .direitos-reservados {
 }
 
 footer .direitos-reservados p {
-  color: var(--cor-extra-footer);
+  color: var(--cor-extra);
   font-family: var(--fonte-secundaria);
 }
 
