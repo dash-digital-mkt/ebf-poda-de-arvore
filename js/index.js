@@ -36,11 +36,22 @@ document.getElementById('menu-icon').addEventListener('click', function() {
     }
 });
 
+const overlay = document.querySelector('.overlay');
+overlay.addEventListener('click', () => {
+    const modal = document.querySelector(".entre-em-contato-container");
+    modal.style.display = 'none';
+    modal.style['justify-content'] = 'center';
+    modal.style['align-items'] = 'center';
+
+    overlay.style.display = 'none';
+})
+
 document.getElementById("button-entre-em-contato").addEventListener('click', function() {
-    document.querySelector(".entre-em-contato-container").style.display = 'flex';
-    document.querySelector(".entre-em-contato-container").style['justify-content'] = 'center';
-    document.querySelector(".entre-em-contato-container").style['align-items'] = 'center';
-    document.querySelector(".overlay").style.display = 'block';
+    const modal = document.querySelector(".entre-em-contato-container");
+    modal.style.display = 'flex';
+    modal.style['justify-content'] = 'center';
+    modal.style['align-items'] = 'center';
+    overlay.style.display = 'block';
 })
 
 function entrarEmContato() {
