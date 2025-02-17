@@ -8,6 +8,10 @@
         width: 90%;
     }
 
+    #quem-somos .equipe {
+        width: 69%;
+    }
+
     .destaque p {
         width: 70%;
     }
@@ -156,6 +160,13 @@
 
 }
 
+@media (max-width:700px) {
+    .final-content button {
+        margin-top: -70px;
+        font-size: 1rem;
+    }
+}
+
 @media (max-width:620px) {
     .entre-em-contato {
         width: 80%;
@@ -166,6 +177,14 @@
         height: 100vh;
     }
 
+}
+
+@media (max-width:500px) {
+    .final-content button {
+        padding: 10px 20px;
+        margin-top: -50px;
+        font-size: 0.75rem;
+    }
 }
 
 @media (max-width:455px) {
@@ -229,6 +248,11 @@
 
     .entre-em-contato-valor {
         font-size: 1.2rem;
+    }
+
+    .botao-wpp {
+        padding: 5px 12px;
+        font-size: 1.25rem;
     }
 }
 

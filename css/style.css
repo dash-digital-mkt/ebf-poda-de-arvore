@@ -203,7 +203,7 @@ header nav ul li .btn-compliance:hover {
 }
 
 #quem-somos .equipe {
-  width: 40%;
+  width: 50%;
   border-radius: 10px;
 }
 
@@ -708,4 +708,61 @@ footer a {
 
 .sublinhado {
   text-decoration: underline;
+}
+
+.whatsapp {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 20px;
+  right: 20px;
+  gap: 20px;
+  font-family: var(--fonte-secundaria);
+  color: #000;
+  z-index: 1000;
+}
+
+.texto-wpp {
+  display: none;
+  padding: 5px 20px;
+  background-color: var(--cor-primaria);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.texto-wpp::after {
+  display: none;
+  content: '';
+  position: absolute;
+  right: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 20px solid var(--cor-primaria);
+  z-index: 1;
+}
+
+.botao-wpp {
+  padding: 5px 15px;
+  background-color: #49E670;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #fff;
+  font-size: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: transform 0.2s ease;
+}
+
+.botao-wpp a {
+  color: #fff;
+}
+
+.whatsapp:hover .texto-wpp, .whatsapp:hover .texto-wpp::after  {
+  display: block;
 }
