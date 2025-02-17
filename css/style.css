@@ -532,12 +532,13 @@ footer a {
   left: 50%;
   z-index: 1001;
   width: 80vw;
-  height: 80vh;
+  height: 70vh;
   transform: translate(-50%, -50%);
   align-items: center;
   justify-content: center;
   overflow: auto;
   background-color: var(--cor-terciaria);
+  border-radius: 8px;
 }
 
 .overlay {
@@ -584,6 +585,7 @@ footer a {
 
 .entre-em-contato-direita {
   display: flex;
+  flex: 1;
   justify-content: center;
   align-items: center;
   border-radius: 0px 8px 8px 0px;
@@ -689,4 +691,8 @@ footer a {
 
 .sublinhado {
   text-decoration: underline;
+}
+
+.footer-servicos {
+  cursor: pointer;
 }

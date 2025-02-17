@@ -138,17 +138,6 @@
     }
 }
 
-@media (max-width:620px) {
-    .entre-em-contato {
-        width: 80%;
-    }
-
-    .entre-em-contato-container {
-        width: 100vw;
-        height: 100vh;
-    }
-}
-
 @media (max-width:455px) {
     .hero-content h1 {
         font-size: 3rem;
