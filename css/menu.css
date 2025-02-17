@@ -9,6 +9,10 @@
     z-index: 2;
 }
 
+.home-no-menu {
+    display: none;
+}
+
 .menu-logo {
     display: none;
 }
@@ -50,7 +54,7 @@
     header nav ul li .btn-compliance {
         padding: 0;
     }
-
+    .home-no-menu,
     .menu-icon,
     .menu-logo {
         display: block;

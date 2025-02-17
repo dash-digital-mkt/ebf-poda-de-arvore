@@ -462,6 +462,10 @@
     #diferenca-denuncia-sac h3 {
         font-size: 3rem;
     }
+
+    header .container .logo img {
+        width: 45%;
+    }
 }
 
 @media (max-width:800px) {
@@ -475,7 +479,10 @@
 }
 
 @media (max-width:768px) {
-
+    header .container .logo img {
+        width: 35%;
+    }
+    
     #diferenca-denuncia-sac h2,
     #canal-denuncias h2 {
         font-size: 3.25rem;

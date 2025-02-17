@@ -10,29 +10,15 @@ document.getElementById('menu-icon').addEventListener('click', function() {
         menuLogo.classList.add('visible');
 
         // mudando os textos instantaneamente
-        document.querySelectorAll('.nav-item:not(.regular-only .nav-item)').forEach(function(item) {
-            item.textContent = item.getAttribute('data-active');
+        item.addEventListener("click", () => {
+            navLinks.classList.toggle("active", false)
+            menuIcon.src = "./images/hamburguer.svg";
+            menuLogo.classList.remove('visible');
+        })
 
-            item.addEventListener("click", () => {
-                navLinks.classList.toggle("active", false)
-                menuIcon.src = "./images/hamburguer.svg";
-                menuLogo.classList.remove('visible');
-            })
-        });
     } else {
         menuIcon.src = "/images/hamburguer.svg";
         menuLogo.classList.remove('visible');
-
-        // Delay da atualizacao texto
-        setTimeout(function() {
-            document.querySelectorAll('.nav-item:not(.regular-only .nav-item)').forEach(function(item) {
-                item.textContent = item.getAttribute('data-default');
-
-                item.addEventListener("click", () => {
-                    navLinks.classList.toggle("active")
-                })
-            });
-        }, 300); 
     }
 });
 
