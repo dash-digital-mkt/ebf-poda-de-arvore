@@ -31,32 +31,22 @@ if (overlay) {
     })
 }
 
-const botaoEntreEmContatoPrincipal = document.getElementById("button-entre-em-contato-principal");
-if (botaoEntreEmContatoPrincipal) {
-    botaoEntreEmContatoPrincipal.addEventListener('click', function() {
-        const modal = document.querySelector(".entre-em-contato-container");
-        modal.style.display = 'flex';
-        overlay.style.display = 'block';
-    })
+function configurarBotaoModal(botaoId, modalSelector, overlay) {
+    const botao = document.getElementById(botaoId);
+    if (botao) {
+        botao.addEventListener('click', function() {
+            const modal = document.querySelector(modalSelector);
+            if (modal && overlay) {
+                modal.style.display = 'flex';
+                overlay.style.display = 'block';
+            }
+        });
+    }
 }
 
-const botaoEntreEmContato = document.getElementById("button-entre-em-contato");
-if (botaoEntreEmContato) {
-    botaoEntreEmContato.addEventListener('click', function() {
-        const modal = document.querySelector(".entre-em-contato-container");
-        modal.style.display = 'flex';
-        overlay.style.display = 'block';
-    })
-}
-
-const botaoEntreEmContatoFooter = document.getElementById("button-entre-em-contato-footer");
-if (botaoEntreEmContatoFooter) {
-    botaoEntreEmContatoFooter.addEventListener('click', function() {
-        const modal = document.querySelector(".entre-em-contato-container");
-        modal.style.display = 'flex';
-        overlay.style.display = 'block';
-    });
-}
+configurarBotaoModal("button-entre-em-contato", ".entre-em-contato-container", overlay);
+configurarBotaoModal("button-entre-em-contato-principal", ".entre-em-contato-container", overlay);
+configurarBotaoModal("button-entre-em-contato-footer", ".entre-em-contato-container", overlay);
 
 const setaServicos = document.querySelector('.seta-servicos');
 if (setaServicos) {
