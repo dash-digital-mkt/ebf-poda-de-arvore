@@ -2,12 +2,14 @@
     height: 50vh;
 }
 
-.hero.hero-compliance {
-    background-color: var(--cor-terciaria);
+.hero.hero-compliance .hero-content h1 {
+    font-size: 5rem;
+    line-height: 100%;
+    margin-bottom: 0;
 }
 
-.hero.hero.hero-compliance .hero-content h1 {
-    margin-bottom: 0;
+.hero.hero-compliance {
+    background-color: var(--cor-terciaria);
 }
 
 /* o que precisa saber */
@@ -109,20 +111,7 @@
 
 .container-gestao img {
     width: 70%;
-}
-
-.container-gestao button {
-    background: var(--cor-secundaria);
-    color: var(--cor-primaria);
-    border: none;
-    padding: 22px 32px;
-    font-size: 1.2rem;
-    line-height: 20px;
-    font-weight: 400;
-    cursor: pointer;
-    border-radius: 30px;
-    margin-bottom: 5%;
-    transition: background 0.3s;
+    margin-bottom: 10%;
 }
 
 /* FLUXOGRAMA DE DENUNCIAS */
@@ -403,6 +392,7 @@
 }
 
 @media (max-width:1235px) {
+
     .conteudo-fluxograma .titulo-conteudo-fluxograma div,
     .conteudo-fluxograma .titulo-conteudo-fluxograma h4 {
         font-size: 2rem;
@@ -425,7 +415,7 @@
         padding-right: 0;
         padding-left: 5%;
     }
-    
+
     .titulo-saber,
     .titulo-fluxograma,
     .titulo-links-programas {
@@ -437,7 +427,7 @@
 
     .titulo-saber h2:last-child,
     .titulo-fluxograma h2:last-child,
-    .titulo-links-programas h2:last-child{
+    .titulo-links-programas h2:last-child {
         margin-bottom: 25px;
     }
 
@@ -485,6 +475,7 @@
 }
 
 @media (max-width:768px) {
+
     #diferenca-denuncia-sac h2,
     #canal-denuncias h2 {
         font-size: 3.25rem;
@@ -512,7 +503,7 @@
         margin-bottom: 0;
         padding: 30px 0;
     }
-    
+
     #canal-denuncias .conteudo-denuncia p:not(:first-child) {
         border-left: 0px;
         border-top: 1px solid var(--cor-branca);
@@ -525,6 +516,9 @@
 }
 
 @media (max-width:660px) {
+    .hero.hero-compliance .hero-content h1 {
+        font-size: 4.5rem;
+    }
 
     #diferenca-denuncia-sac h2,
     #diferenca-denuncia-sac h3,
@@ -538,6 +532,9 @@
 }
 
 @media (max-width:565px) {
+    .hero.hero-compliance .hero-content h1 {
+        font-size: 4rem;
+    }
 
     #diferenca-denuncia-sac h2,
     #diferenca-denuncia-sac h3,
@@ -557,6 +554,10 @@
     .container-saber .titulo-saber h2,
     .container-fluxograma .titulo-fluxograma h2 {
         font-size: 2.75rem;
+    }
+
+    .titulo-links {
+        font-size: 1rem;
     }
 
     #diferenca-denuncia-sac h2,
@@ -586,12 +587,15 @@
 }
 
 @media (max-width:435px) {
+    .hero.hero-compliance .hero-content h1 {
+        font-size: 3rem;
+    }
 
     .politica-prevencao-assedio h2,
     .container-links-programas .titulo-links-programas h2,
     .container-saber .titulo-saber h2,
     .container-fluxograma .titulo-fluxograma h2 {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
     }
 
     #diferenca-denuncia-sac h2,
