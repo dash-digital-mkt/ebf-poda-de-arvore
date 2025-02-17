@@ -38,7 +38,7 @@
     <header class="header">
         <div class="container">
             <div class="logo">
-                <img src="./images/logo-laranja.png" alt="EBF Qualidade Profissional">
+                <a href="index.html"><img src="./images/logo-laranja.png" alt="EBF Qualidade Profissional"></a>
             </div>
             <nav>
                 <div class="topo-menu">
@@ -50,16 +50,64 @@
                     <li class="nav-servicos"><a class="nav-item">SERVIÇOS</a></li>
                     <li><a href="index.html#principios" class="nav-item">PRINCÍPIOS</a>
                     </li>
-                    <li><a href="index.html" class="nav-item">CONTATO</a></li>
+                    <li><a id="button-entre-em-contato" class="nav-item">CONTATO</a></li>
                     <li><a href="compliance-integridade.html" class="nav-item btn-compliance">COMPLIANCE E
-                        INTEGRIDADE</a></li>
+                            INTEGRIDADE</a></li>
                     <li>
-                      <img id="menu-logo" class="menu-logo" class="nav-item" src="./images/logo-menu.png" alt="Logo">
+                        <img id="menu-logo" class="menu-logo" class="nav-item" src="./images/logo-menu.png" alt="Logo">
                     </li>
-                  </ul>
+                </ul>
             </nav>
         </div>
     </header>
+
+    <!-- trecho para contato no compliance -->
+    <div class="overlay"></div>
+    <div class="entre-em-contato-container">
+      <div class="entre-em-contato">
+        <div class="entre-em-contato-esquerda">
+          <div class="entre-em-contato-esquerda-heading">
+            <span class="entre-em-contato-esquerda-heading-secundario">ENTRE EM<br></span>
+            <span class="entre-em-contato-esquerda-heading-primario">CONTATO</span>
+          </div>
+          <div class="entre-em-contato-esquerda-container">
+            <div class="entre-em-contato-esquerda-email">
+              <div class="entre-em-contato-label">E-mail para envio de currículos</div>
+              <div class="entre-em-contato-valor sublinhado">COMERCIAL@EBFWEB.COM.BR</div>
+              <div></div>
+            </div>
+          </div>
+          <div class="entre-em-contato-esquerda-container">
+            <div class="entre-em-contato-esquerda-wpp">
+              <div class="entre-em-contato-label">Whatsapp</div>
+              <div class="entre-em-contato-valor">(61) 3397-1321</div>
+            </div>
+          </div>
+          <div class="entre-em-contato-esquerda-container">
+            <div class="entre-em-contato-esquerda-endereco">
+              <div class="entre-em-contato-label">Endereço</div>
+              <div class="entre-em-contato-valor">PQEAT - Brasília, DF, 70297-400, Brasil</div>
+            </div>
+          </div>
+        </div>
+        <div class="entre-em-contato-direita-content">
+          <div class="entre-em-contato-direita-heading">CONTATO COMERCIAL</div>
+          <div class="entre-em-contato-direita-texto">Preencha os detalhes e entraremos em<br>contato o mais breve
+            possível pra<br>entender suas necessidades!</div>
+          <div class="inputs-entre-em-contato">
+            <label for="nome-entre-em-contato">Nome</label>
+            <input type="text" id="nome-entre-em-contato" placeholder="Seu nome aqui">
+            <label for="email-entre-em-contato">E-mail</label>
+            <input type="text" id="email-entre-em-contato" placeholder="Seu e-mail aqui">
+            <label for="telefone-entre-em-contato">Telefone</label>
+            <input type="text" id="telefone-entre-em-contato" placeholder="Seu telefone aqui">
+            <label for="mensagem-entre-em-contato">Mensagem</label>
+            <input type="text" id="mensagem-entre-em-contato" placeholder="Sua mensagem aqui">
+          </div>
+          <button id="entrar-em-contato" onclick="entrarEmContato()">ENVIAR</button>
+        </div>
+      </div>
+    </div>
 
     <!-- adicionada classe hero-compliance mudanca no texto -->
     <section class="hero hero-compliance">
@@ -123,9 +171,13 @@
                         também estejam comprometidos com o mesmo compromisso de práticas empresariais éticas.
                     </p>
                     <div class="botoes-saber">
-                        <button class="botao-saber"><a href="https://www.ebfweb.com.br/_files/ugd/5b62b7_d2d0471506204342b70121069bddc046.pdf" target="_blank">TERCEIROS</a></button>
+                        <button class="botao-saber"><a
+                                href="https://www.ebfweb.com.br/_files/ugd/5b62b7_d2d0471506204342b70121069bddc046.pdf"
+                                target="_blank">TERCEIROS</a></button>
 
-                        <button class="botao-saber"><a href="https://www.ebfweb.com.br/_files/ugd/5b62b7_0f38d9a9dee7405f860ad6236d72c11b.pdf" target="_blank">AGENTES PÚBLICOS</a></button>
+                        <button class="botao-saber"><a
+                                href="https://www.ebfweb.com.br/_files/ugd/5b62b7_0f38d9a9dee7405f860ad6236d72c11b.pdf"
+                                target="_blank">AGENTES PÚBLICOS</a></button>
                     </div>
                 </li>
             </ul>
@@ -136,7 +188,8 @@
         <div class="container-gestao">
             <h2>APRESENTAÇÃO <span class="highlight">ALTA GESTÃO</span></h2>
             <div class="video-container">
-                <iframe src="https://drive.google.com/file/d/1Hx_PZERpNTTrKx1RT4KD47GNvONK8tvf/preview" width="640" height="480" allow="autoplay"></iframe>
+                <iframe src="https://drive.google.com/file/d/1Hx_PZERpNTTrKx1RT4KD47GNvONK8tvf/preview" width="640"
+                    height="480" allow="autoplay"></iframe>
             </div>
         </div>
     </section>
@@ -429,7 +482,7 @@
                         <li><a href="./index.html#quem-somos">QUEM SOMOS</a></li>
                         <li class="nav-servicos"><a>SERVIÇOS</a></li>
                         <li><a href="./index.html#principios">PRINCÍPIOS</a></li>
-                        <li><a href="index.html">CONTATO</a></li>
+                        <li><a id="button-entre-em-contato-footer">CONTATO</a></li>
                     </ul>
                 </nav>
                 <p>© 2025, Todos os direitos reservados<br>
@@ -440,12 +493,12 @@
 
     <div class="whatsapp">
         <div class="texto-wpp">
-          <span>Comercial</span>
+            <span>Comercial</span>
         </div>
         <div class="botao-wpp">
-          <a href="https://wa.me/+556198052164" target="_blank"><i class="fa-brands fa-whatsapp icone"></i></a>
+            <a href="https://wa.me/+556198052164" target="_blank"><i class="fa-brands fa-whatsapp icone"></i></a>
         </div>
-      </div>
+    </div>
 
     <script src="./js/index.js"></script>
 </body>

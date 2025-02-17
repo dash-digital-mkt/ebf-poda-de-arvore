@@ -40,6 +40,15 @@ if (botaoEntreEmContato) {
     })
 }
 
+const botaoEntreEmContatoFooter = document.getElementById("button-entre-em-contato-footer");
+if (botaoEntreEmContatoFooter) {
+    botaoEntreEmContatoFooter.addEventListener('click', function() {
+        const modal = document.querySelector(".entre-em-contato-container");
+        modal.style.display = 'flex';
+        overlay.style.display = 'block';
+    });
+}
+
 const setaServicos = document.querySelector('.seta-servicos');
 if (setaServicos) {
     setaServicos.addEventListener('click', (event) => {

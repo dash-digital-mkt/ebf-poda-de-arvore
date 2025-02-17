@@ -37,7 +37,7 @@
 .nav-links li:last-child {
     display: flex;
     margin-top: auto;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 .nav-links a {
@@ -84,7 +84,7 @@
     }
 
     .nav-links li:not(:last-child) {
-        margin: 20px 0;
+        margin: 15px 0;
         border-bottom: 1px solid black;
         width: 80%;
         margin-left: 24px;
