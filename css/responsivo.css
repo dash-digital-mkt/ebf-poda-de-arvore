@@ -169,13 +169,6 @@
     }
 }
 
-@media (max-width:620px) {
-    .entre-em-contato {
-        width: 80%;
-    }
-
-}
-
 @media (max-width:500px) {
     .final-content button {
         padding: 10px 20px;
