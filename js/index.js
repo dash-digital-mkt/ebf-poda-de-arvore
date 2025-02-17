@@ -31,6 +31,15 @@ if (overlay) {
     })
 }
 
+const botaoEntreEmContatoPrincipal = document.getElementById("button-entre-em-contato-principal");
+if (botaoEntreEmContatoPrincipal) {
+    botaoEntreEmContatoPrincipal.addEventListener('click', function() {
+        const modal = document.querySelector(".entre-em-contato-container");
+        modal.style.display = 'flex';
+        overlay.style.display = 'block';
+    })
+}
+
 const botaoEntreEmContato = document.getElementById("button-entre-em-contato");
 if (botaoEntreEmContato) {
     botaoEntreEmContato.addEventListener('click', function() {
