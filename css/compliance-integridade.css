@@ -617,3 +617,7 @@
         width: 75%;
     }
 }
+
+.nav-servicos {
+    cursor: pointer;
+}
