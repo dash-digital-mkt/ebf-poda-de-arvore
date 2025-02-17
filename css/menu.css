@@ -46,7 +46,7 @@
     color: var(--cor-secundaria);
 }
 
-@media (max-width: 1135px) {
+@media (max-width: 1275px) {
     header nav ul li .btn-compliance {
         padding: 0;
     }
