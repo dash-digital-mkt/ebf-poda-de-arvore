@@ -37,7 +37,7 @@
 .nav-links li:last-child {
     display: flex;
     margin-top: auto;
-    margin-bottom: 10%;
+    margin-bottom: 25px;
 }
 
 .nav-links a {
