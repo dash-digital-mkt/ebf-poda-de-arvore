@@ -107,11 +107,23 @@
 
 .container-gestao h2 {
     margin-top: 5%;
+    font-size: 4rem;
 }
 
-.container-gestao img {
-    width: 70%;
+.video-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    aspect-ratio: 16 / 9;
     margin-bottom: 10%;
+}
+
+.video-container iframe {
+    width: 90%;
+    height: 100%;
+    border: 0;
 }
 
 /* FLUXOGRAMA DE DENUNCIAS */
@@ -482,7 +494,11 @@
     header .container .logo img {
         width: 35%;
     }
-    
+
+    .container-gestao h2 {
+        font-size: 3rem;
+    }
+
     #diferenca-denuncia-sac h2,
     #canal-denuncias h2 {
         font-size: 3.25rem;
@@ -527,6 +543,10 @@
         font-size: 4.5rem;
     }
 
+    .container-gestao h2 {
+        font-size: 2.5rem;
+    }
+
     #diferenca-denuncia-sac h2,
     #diferenca-denuncia-sac h3,
     #canal-denuncias h2 {
@@ -555,7 +575,6 @@
 }
 
 @media (max-width:505px) {
-
     .politica-prevencao-assedio h2,
     .container-links-programas .titulo-links-programas h2,
     .container-saber .titulo-saber h2,
@@ -579,6 +598,11 @@
 }
 
 @media (max-width:465px) {
+
+    .container-gestao h2 {
+        font-size: 2rem;
+    }
+
     #diferenca-denuncia-sac .texto-canal-denuncia p {
         width: 100%;
     }
@@ -624,6 +648,10 @@
 }
 
 @media (max-width:368px) {
+    .container-gestao h2 {
+        font-size: 1.5rem;
+    }
+
     #diferenca-denuncia-sac .texto-canal-denuncia p {
         width: 75%;
     }
