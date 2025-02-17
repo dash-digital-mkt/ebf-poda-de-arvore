@@ -37,19 +37,52 @@ document.getElementById('menu-icon').addEventListener('click', function() {
 });
 
 const overlay = document.querySelector('.overlay');
-overlay.addEventListener('click', () => {
-    const modal = document.querySelector(".entre-em-contato-container");
-    modal.style.display = 'none';
-    overlay.style.display = 'none';
+if (overlay) {
+    overlay.addEventListener('click', () => {
+        const modal = document.querySelector(".entre-em-contato-container");
+        modal.style.display = 'none';
+        overlay.style.display = 'none';
+    })
+}
+
+const botaoEntreEmContato = document.getElementById("button-entre-em-contato");
+if (botaoEntreEmContato) {
+    botaoEntreEmContato.addEventListener('click', function() {
+        const modal = document.querySelector(".entre-em-contato-container");
+        modal.style.display = 'flex';
+        overlay.style.display = 'block';
+    })
+}
+
+const setaServicos = document.querySelector('.seta-servicos');
+if (setaServicos) {
+    setaServicos.addEventListener('click', (event) => {
+        colapsar(event);
+    })
+}
+
+const navServicos = document.querySelectorAll('.nav-servicos');
+if (navServicos.length) {
+    navServicos.forEach(ns => {
+        ns.addEventListener('click', (event) => {
+            if (window.location.href.includes("index.html")) {
+                colapsar(event);
+            } else {
+                window.location.href = "index.html?abrir=colapsavel"
+            }
+        })
+    })
+}
+
+window.addEventListener("load", e => {
+    const params = new URLSearchParams(window.location.search);
+    const classeElemento = params.get("abrir");
+    if (classeElemento) {
+        colapsar(e);
+    }
 })
 
-document.getElementById("button-entre-em-contato").addEventListener('click', function() {
-    const modal = document.querySelector(".entre-em-contato-container");
-    modal.style.display = 'flex';
-    overlay.style.display = 'block';
-})
-
-document.querySelector('.seta-servicos').addEventListener('click', (event) => {
+function colapsar(event) {
     event.preventDefault();
     const colapsaveis = document.querySelectorAll('.colapsavel');
     colapsaveis.forEach(colapsavel => {
@@ -62,8 +95,7 @@ document.querySelector('.seta-servicos').addEventListener('click', (event) => {
             colapsavel.style.display = 'none';
         }
     });
-})
-
+}
 
 function entrarEmContato() {
     const nome = document.getElementById("nome-entre-em-contato").value
