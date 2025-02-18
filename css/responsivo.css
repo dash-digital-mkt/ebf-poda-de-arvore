@@ -33,6 +33,12 @@
     }
 }
 
+@media (max-width:920px) {
+    header .logo img {
+        width: 45%;
+    }
+}
+
 @media (max-width:810px) {
     .entre-em-contato {
         flex-direction: column;
@@ -72,8 +78,9 @@
     }
 
     header .container .logo img {
-        width: 50%;
+        width: 35%;
     }
+    
 
     .hero-content h1 {
         font-size: 3.5rem;
