@@ -45,7 +45,6 @@ function configurarBotaoModal(botaoId, modalSelector, overlay) {
 }
 
 configurarBotaoModal("button-entre-em-contato", ".entre-em-contato-container", overlay);
-configurarBotaoModal("button-entre-em-contato-principal", ".entre-em-contato-container", overlay);
 configurarBotaoModal("button-entre-em-contato-footer", ".entre-em-contato-container", overlay);
 
 const setaServicos = document.querySelector('.seta-servicos');

@@ -116,6 +116,10 @@ header nav ul li .btn-compliance:hover {
   transition: background 0.3s;
 }
 
+.hero-content button a {
+  color: var(--cor-primaria);
+}
+
 .hero-content button:hover {
   background: #db8052;
 }
