@@ -14,17 +14,17 @@
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <meta name= "format-detection" content="telephone=no"> 
+    <meta name="format-detection" content="telephone=no">
     <title>EBF - Compliance e integridade</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/variaveis.css?v=1.0.2">
-    <link rel="stylesheet" href="./css/reset-geral.css?v=1.0.2">
-    <link rel="stylesheet" href="./css/style.css?v=1.0.2">
-    <link rel="stylesheet" href="./css/menu.css?v=1.0.2">
-    <link rel="stylesheet" href="./css/responsivo.css?v=1.0.2">
-    <link rel="stylesheet" href="./css/compliance-integridade.css?v=1.0.2">
+    <link rel="stylesheet" href="./css/variaveis.css?v=1.0.3">
+    <link rel="stylesheet" href="./css/reset-geral.css?v=1.0.3">
+    <link rel="stylesheet" href="./css/style.css?v=1.0.3">
+    <link rel="stylesheet" href="./css/menu.css?v=1.0.3">
+    <link rel="stylesheet" href="./css/responsivo.css?v=1.0.3">
+    <link rel="stylesheet" href="./css/compliance-integridade.css?v=1.0.3">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -65,49 +65,49 @@
     <!-- trecho para contato no compliance -->
     <div class="overlay"></div>
     <div class="entre-em-contato-container">
-      <div class="entre-em-contato">
-        <div class="entre-em-contato-esquerda">
-          <div class="entre-em-contato-esquerda-heading">
-            <span class="entre-em-contato-esquerda-heading-secundario">ENTRE EM<br></span>
-            <span class="entre-em-contato-esquerda-heading-primario">CONTATO</span>
-          </div>
-          <div class="entre-em-contato-esquerda-container">
-            <div class="entre-em-contato-esquerda-email">
-              <div class="entre-em-contato-label">E-mail para envio de currículos</div>
-              <div class="entre-em-contato-valor sublinhado">COMERCIAL@EBFWEB.COM.BR</div>
-              <div></div>
+        <div class="entre-em-contato">
+            <div class="entre-em-contato-esquerda">
+                <div class="entre-em-contato-esquerda-heading">
+                    <span class="entre-em-contato-esquerda-heading-secundario">ENTRE EM<br></span>
+                    <span class="entre-em-contato-esquerda-heading-primario">CONTATO</span>
+                </div>
+                <div class="entre-em-contato-esquerda-container">
+                    <div class="entre-em-contato-esquerda-email">
+                        <div class="entre-em-contato-label">E-mail para envio de currículos</div>
+                        <div class="entre-em-contato-valor sublinhado">COMERCIAL@EBFWEB.COM.BR</div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="entre-em-contato-esquerda-container">
+                    <div class="entre-em-contato-esquerda-wpp">
+                        <div class="entre-em-contato-label">Whatsapp</div>
+                        <div class="entre-em-contato-valor">(61) 3397-1321</div>
+                    </div>
+                </div>
+                <div class="entre-em-contato-esquerda-container">
+                    <div class="entre-em-contato-esquerda-endereco">
+                        <div class="entre-em-contato-label">Endereço</div>
+                        <div class="entre-em-contato-valor">PQEAT - Brasília, DF, 70297-400, Brasil</div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="entre-em-contato-esquerda-container">
-            <div class="entre-em-contato-esquerda-wpp">
-              <div class="entre-em-contato-label">Whatsapp</div>
-              <div class="entre-em-contato-valor">(61) 3397-1321</div>
+            <div class="entre-em-contato-direita-content">
+                <div class="entre-em-contato-direita-heading">CONTATO COMERCIAL</div>
+                <div class="entre-em-contato-direita-texto">Preencha os detalhes e entraremos em<br>contato o mais breve
+                    possível pra<br>entender suas necessidades!</div>
+                <div class="inputs-entre-em-contato">
+                    <label for="nome-entre-em-contato">Nome</label>
+                    <input type="text" id="nome-entre-em-contato" placeholder="Seu nome aqui">
+                    <label for="email-entre-em-contato">E-mail</label>
+                    <input type="text" id="email-entre-em-contato" placeholder="Seu e-mail aqui">
+                    <label for="telefone-entre-em-contato">Telefone</label>
+                    <input type="text" id="telefone-entre-em-contato" placeholder="Seu telefone aqui">
+                    <label for="mensagem-entre-em-contato">Mensagem</label>
+                    <input type="text" id="mensagem-entre-em-contato" placeholder="Sua mensagem aqui">
+                </div>
+                <button id="entrar-em-contato" onclick="entrarEmContato()">ENVIAR</button>
             </div>
-          </div>
-          <div class="entre-em-contato-esquerda-container">
-            <div class="entre-em-contato-esquerda-endereco">
-              <div class="entre-em-contato-label">Endereço</div>
-              <div class="entre-em-contato-valor">PQEAT - Brasília, DF, 70297-400, Brasil</div>
-            </div>
-          </div>
         </div>
-        <div class="entre-em-contato-direita-content">
-          <div class="entre-em-contato-direita-heading">CONTATO COMERCIAL</div>
-          <div class="entre-em-contato-direita-texto">Preencha os detalhes e entraremos em<br>contato o mais breve
-            possível pra<br>entender suas necessidades!</div>
-          <div class="inputs-entre-em-contato">
-            <label for="nome-entre-em-contato">Nome</label>
-            <input type="text" id="nome-entre-em-contato" placeholder="Seu nome aqui">
-            <label for="email-entre-em-contato">E-mail</label>
-            <input type="text" id="email-entre-em-contato" placeholder="Seu e-mail aqui">
-            <label for="telefone-entre-em-contato">Telefone</label>
-            <input type="text" id="telefone-entre-em-contato" placeholder="Seu telefone aqui">
-            <label for="mensagem-entre-em-contato">Mensagem</label>
-            <input type="text" id="mensagem-entre-em-contato" placeholder="Sua mensagem aqui">
-          </div>
-          <button id="entrar-em-contato" onclick="entrarEmContato()">ENVIAR</button>
-        </div>
-      </div>
     </div>
 
     <!-- adicionada classe hero-compliance mudanca no texto -->
