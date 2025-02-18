@@ -2,7 +2,6 @@
 header {
   background: transparent;
   color: var(--cor-primaria);
-  padding: 10px 0;
   position: absolute;
   width: 100%;
   top: 0;
@@ -16,7 +15,11 @@ header.scrolled {
 }
 
 header .container {
+  background-color: #123829d2;
   display: flex;
+  position: fixed;
+  left: 0;
+  right: 0;
   text-wrap: wrap;
   justify-content: space-between;
   align-items: center;
@@ -49,7 +52,7 @@ header nav ul li a {
 }
 
 header nav ul li .btn-compliance {
-  background: var(--cor-terciaria);
+  /* background: var(--cor-terciaria); */
   color: var(--cor-primaria);
   padding: 8px 15px;
   border-radius: 20px;
@@ -242,6 +245,24 @@ header nav ul li .btn-compliance:hover {
 #quem-somos .seta a {
   text-decoration: none;
   color: var(--cor-terciaria);
+}
+
+#quem-somos .coluna .seta-download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1rem;
+  min-width: 300px;
+}
+
+.download-seta-servicos {
+  width: 40px;
+}
+
+.download-texto-servicos {
+  font-size: 1.1rem;
+  line-height: 40px;
 }
 
 /* Destaque */
@@ -486,7 +507,7 @@ footer .container-footer {
 footer .container-externo-social {
   display: flex;
   flex-direction: column;
-  gap: 15%;
+  gap: 9%;
   margin: 5% 0;
 }
 
@@ -542,6 +563,12 @@ footer p {
 
 footer a {
   color: var(--cor-secundaria);
+}
+
+.endereco-telefone-footer {
+  padding-right: 20px;
+  font-family: var(--fonte-secundaria);
+  margin-left: 10px;
 }
 
 .entre-em-contato-container {

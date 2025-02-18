@@ -17,7 +17,7 @@
     }
 
     footer .logo-footer img {
-        width: 60%;
+        width: 50%;
     }
 
     .entre-em-contato-esquerda-heading {
@@ -162,11 +162,6 @@
     footer .social-media .social-icons .icone {
         font-size: 1.3rem;
     }
-
-    footer .container-externo-social {
-        gap: 5%;
-    }
-
 }
 
 @media (max-width:700px) {
@@ -225,22 +220,52 @@
         font-size: 0.5rem;
     }
 
-    footer .logo-footer img {
-        width: 50%;
-    }
-
-    footer .social-media {
-        display: flex;
-        gap: 15px;
-    }
-
     footer .social-media .social-icons .icone {
         font-size: 1.2rem;
     }
 
-
     footer p {
         font-size: 0.6rem;
+    }
+
+    footer .container-footer {
+        flex-direction: column;
+    }
+
+    footer .logo-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5%;
+    }
+
+    footer .logo-footer img {
+        width: 40%;
+    }
+
+    footer .container-interno {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    footer .social-media {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        gap: 15px;
+    }
+
+    footer .direitos-reservados {
+        border-left: 0px;
+        border-top: 1px solid rgba(0, 0, 0, 0.5);
+        padding: 4%;
+        align-items: center;
+    }
+
+    footer .menu-footer {
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     .entre-em-contato-valor {
@@ -251,17 +276,33 @@
         padding: 5px 12px;
         font-size: 1.25rem;
     }
+
+    .menu-footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .menu-footer li {
+        flex: 1 1 calc(50% - 10px);
+        aspect-ratio: 4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .endereco-telefone-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px 0;
+        padding: 10px 0;
+    }
 }
 
 @media (max-width:375px) {
-    footer .logo-footer img {
-        width: 60%;
-    }
-
     #principios h2 {
         font-size: 2.75rem;
     }
-
 }
 
 @media (max-width:345px) {
@@ -306,56 +347,5 @@
 
     .final-content button {
         padding: 5px 15px;
-    }
-
-    footer .container-footer {
-        flex-direction: column;
-    }
-
-    footer .logo-footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 5%;
-    }
-
-    footer .logo-footer img {
-        width: 40%;
-    }
-
-    footer .container-interno {
-        justify-content: center;
-        margin-left: 0;
-    }
-
-    footer .social-media {
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-
-    footer .direitos-reservados {
-        border-left: 0px;
-        border-top: 1px solid rgba(0, 0, 0, 0.5);
-        padding: 4%;
-        align-items: center;
-    }
-
-    footer .menu-footer {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .menu-footer {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .menu-footer li {
-        flex: 1 1 calc(50% - 10px);
-        aspect-ratio: 4;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 }
